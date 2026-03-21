@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What If I Could Go Back to Being a High School Freshman? — From Hensachi 60 to Tokyo University: The Complete Strategy</title>
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #16213e;
+            --accent: #e94560;
+            --gold: #f4a261;
+            --green: #2a9d8f;
+            --blue: #457b9d;
+            --light: #f8f9fa;
+            --text: #2c3e50;
+            --border: #dee2e6;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Segoe UI','Hiragino Sans','Noto Sans JP',sans-serif; background:var(--light); color:var(--text); line-height:1.75; }
+
+        nav { position:fixed; top:0; left:0; width:270px; height:100vh; background:var(--primary); color:#fff; overflow-y:auto; z-index:100; padding:20px 0; }
+        nav .nav-header { padding:10px 20px 20px; border-bottom:1px solid rgba(255,255,255,0.1); margin-bottom:10px; }
+        nav .nav-header h2 { font-size:13px; color:var(--gold); letter-spacing:2px; text-transform:uppercase; }
+        nav .nav-header p { font-size:11px; color:rgba(255,255,255,0.4); margin-top:4px; }
+        nav a { display:block; padding:7px 20px; color:rgba(255,255,255,0.7); text-decoration:none; font-size:13px; transition:all 0.2s; border-left:3px solid transparent; }
+        nav a:hover, nav a.active { background:rgba(255,255,255,0.08); color:#fff; border-left-color:var(--gold); }
+        nav .section-label { padding:14px 20px 5px; font-size:10px; color:rgba(255,255,255,0.3); letter-spacing:2px; text-transform:uppercase; }
+
+        main { margin-left:270px; }
+
+        .hero { background:linear-gradient(135deg, var(--primary) 0%, var(--secondary) 40%, var(--accent) 100%); color:#fff; padding:80px 60px 60px; position:relative; overflow:hidden; }
+        .hero::before { content:''; position:absolute; top:-50%; right:-15%; width:500px; height:500px; border-radius:50%; border:60px solid rgba(255,255,255,0.03); }
+        .hero h1 { font-size:38px; font-weight:800; margin-bottom:10px; letter-spacing:-1px; line-height:1.3; }
+        .hero .subtitle { font-size:17px; color:rgba(255,255,255,0.7); margin-bottom:25px; }
+        .hero .meta { display:flex; gap:25px; font-size:13px; color:rgba(255,255,255,0.5); flex-wrap:wrap; }
+
+        .section { padding:50px 60px; border-bottom:1px solid var(--border); }
+        .section:nth-child(even) { background:#fff; }
+        .section-title { font-size:26px; font-weight:700; color:var(--primary); margin-bottom:8px; padding-bottom:10px; border-bottom:3px solid var(--accent); display:inline-block; }
+        .section-lead { font-size:14px; color:#7f8c8d; margin-bottom:25px; max-width:800px; }
+
+        h3 { font-size:19px; color:var(--secondary); margin:28px 0 14px; padding-left:12px; border-left:4px solid var(--accent); }
+        h4 { font-size:15px; color:var(--text); margin:18px 0 8px; font-weight:600; }
+        p { margin-bottom:10px; max-width:900px; font-size:14px; }
+
+        .card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; margin:18px 0; }
+        .card { background:#fff; border:1px solid var(--border); border-radius:8px; padding:22px; transition:box-shadow 0.2s; }
+        .card:hover { box-shadow:0 4px 16px rgba(0,0,0,0.08); }
+        .card-header { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+        .card-icon { width:38px; height:38px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:16px; color:#fff; flex-shrink:0; font-weight:700; }
+        .card h4 { margin:0; font-size:14px; }
+        .card p { font-size:13px; color:#555; margin-bottom:6px; }
+        .card ul { font-size:13px; padding-left:16px; color:#555; }
+        .card li { margin-bottom:3px; }
+
+        table { width:100%; border-collapse:collapse; margin:14px 0; font-size:13px; }
+        thead th { background:var(--primary); color:#fff; padding:9px 12px; text-align:left; font-weight:600; }
+        tbody td { padding:9px 12px; border-bottom:1px solid var(--border); }
+        tbody tr:hover { background:rgba(26,26,46,0.03); }
+
+        .alert { padding:14px 18px; border-radius:8px; margin:14px 0; font-size:13px; }
+        .alert-info { background:#dbeafe; border-left:4px solid #3b82f6; }
+        .alert-warning { background:#fef3c7; border-left:4px solid #f59e0b; }
+        .alert-success { background:#d1fae5; border-left:4px solid #10b981; }
+        .alert-danger { background:#fee2e2; border-left:4px solid #ef4444; }
+
+        .principle-list { list-style:none; padding:0; }
+        .principle-list li { padding:14px 18px; margin-bottom:7px; background:#fff; border-radius:6px; border-left:4px solid var(--accent); font-size:13px; }
+        .principle-list li strong { color:var(--primary); display:block; margin-bottom:3px; font-size:14px; }
+
+        .tag { display:inline-block; padding:2px 9px; border-radius:10px; font-size:11px; font-weight:600; margin:2px; }
+        .tag-red { background:#fee2e2; color:#dc2626; }
+        .tag-blue { background:#dbeafe; color:#2563eb; }
+        .tag-green { background:#d1fae5; color:#065f46; }
+        .tag-gold { background:#fef3c7; color:#92400e; }
+        .tag-purple { background:#ede9fe; color:#7c3aed; }
+
+        .stat-bar-group { margin:12px 0; }
+        .stat-bar-label { display:flex; justify-content:space-between; font-size:12px; margin-bottom:3px; }
+        .stat-bar-track { width:100%; height:8px; background:#ecf0f1; border-radius:4px; overflow:hidden; }
+        .stat-bar-fill { height:100%; border-radius:4px; }
+
+        .timeline { position:relative; padding-left:28px; }
+        .timeline::before { content:''; position:absolute; left:10px; top:0; bottom:0; width:2px; background:var(--border); }
+        .timeline-item { position:relative; margin-bottom:20px; padding:14px 18px; background:#fff; border-radius:8px; border:1px solid var(--border); }
+        .timeline-item::before { content:''; position:absolute; left:-23px; top:18px; width:10px; height:10px; border-radius:50%; background:var(--accent); border:2px solid #fff; }
+        .timeline-item h4 { margin-top:0; }
+        .timeline-item p { font-size:13px; }
+
+        .phase-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin:18px 0; border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+        .phase-item { padding:22px 18px; text-align:center; border-right:1px solid var(--border); }
+        .phase-item:last-child { border-right:none; }
+        .phase-number { width:32px; height:32px; background:var(--accent); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; margin:0 auto 8px; }
+        .phase-item h4 { font-size:13px; margin-bottom:5px; }
+        .phase-item p { font-size:12px; color:#666; }
+
+        .comparison-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:18px 0; }
+        .comparison-box { background:#fff; border-radius:8px; border:1px solid var(--border); overflow:hidden; }
+        .comparison-box .cb-header { padding:10px 18px; font-weight:700; font-size:13px; color:#fff; }
+        .comparison-box .cb-body { padding:14px 18px; }
+        .comparison-box .cb-body ul { list-style:none; padding:0; }
+        .comparison-box .cb-body li { padding:5px 0; font-size:13px; border-bottom:1px solid #f0f0f0; }
+        .comparison-box .cb-body li:last-child { border-bottom:none; }
+
+        .effectiveness-bar { display:flex; align-items:center; gap:10px; margin:6px 0; font-size:13px; }
+        .effectiveness-bar .label { width:180px; flex-shrink:0; }
+        .effectiveness-bar .bar { flex:1; height:22px; background:#ecf0f1; border-radius:4px; overflow:hidden; position:relative; }
+        .effectiveness-bar .bar-fill { height:100%; border-radius:4px; display:flex; align-items:center; padding-left:8px; color:#fff; font-size:11px; font-weight:600; }
+
+        @media print { nav{display:none;} main{margin-left:0;} .hero{padding:40px;} .section{padding:30px;page-break-inside:avoid;} }
+        @media (max-width:768px) { nav{display:none;} main{margin-left:0;} .hero{padding:30px 20px;} .hero h1{font-size:24px;} .section{padding:25px 18px;} .phase-grid,.comparison-grid{grid-template-columns:1fr;} }
+        .fade-in { opacity:0; transform:translateY(16px); transition:opacity 0.4s, transform 0.4s; }
+        .fade-in.visible { opacity:1; transform:translateY(0); }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-header">
+        <h2>DRAGON ZAKURA AI</h2>
+        <p>Hensachi 60 → Tokyo University</p>
+    </div>
+    <div class="section-label">Overview</div>
+    <a href="#executive">Executive Summary</a>
+    <a href="#gap">Gap Analysis</a>
+    <div class="section-label">Learning Science</div>
+    <a href="#study-methods">Study Method Rankings</a>
+    <a href="#memory">The Science of Memory</a>
+    <a href="#concentration">The Science of Focus</a>
+    <a href="#motivation">Motivation Theory</a>
+    <div class="section-label">Strategy</div>
+    <a href="#year1">Year 1: Building Foundations</a>
+    <a href="#year2">Year 2: Building Strength</a>
+    <a href="#year3">Year 3: Battle Mode</a>
+    <a href="#subjects">Subject-by-Subject Guide</a>
+    <div class="section-label">Optimization</div>
+    <a href="#brain">Maximizing Brain Power</a>
+    <a href="#routine">The Ultimate Daily Routine</a>
+    <a href="#mental">Mental Health Management</a>
+    <a href="#exam-day">Exam Day Strategy</a>
+</nav>
+
+<main>
+
+<div class="hero">
+    <p class="subtitle" style="margin-bottom:12px;">A person who couldn't get into Tokyo University imagined going back and had AI create this</p>
+    <h1>What If I Could Go Back to<br>Being a High School Freshman?</h1>
+    <p class="subtitle">The Ultimate Strategy: From Average to Tokyo University — Every learning theory, brain science, and motivation hack analyzed by AI</p>
+    <div class="meta">
+        <span>Author: J.K — just a former high school student</span>
+        <span>Target: Starting April of Year 1 (10th grade)</span>
+        <span>Starting point: Hensachi (deviation score) 60</span>
+        <span>Goal: Tokyo University — pass on the first attempt</span>
+    </div>
+    <a href="https://www.buymeacoffee.com/kanesaka849" target="_blank" style="display:inline-block;margin-top:20px;padding:10px 24px;background:#FFDD00;color:#000;font-weight:700;font-size:13px;border-radius:8px;text-decoration:none;">☕ Buy me a coffee if you found this useful</a>
+</div>
+
+<!-- ===== Executive Summary ===== -->
+<div id="executive" class="section">
+    <h2 class="section-title">Executive Summary</h2>
+    <p class="section-lead">The leap from hensachi 60 (top 15.9%) to Tokyo University acceptance level (hensachi 72-78, top 0.6-2.3%). Hensachi is Japan's standardized deviation score where 50 is average. This requires approximately 3,500-5,000 hours of strategic study over 3 years. You don't need to be a genius. It's all about building a <strong>system</strong> that keeps you doing the right things, every single day.</p>
+
+    <div class="card-grid">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon" style="background:var(--accent);">!</div>
+                <h4>Core Message</h4>
+            </div>
+            <p><strong>"It's the quality of effort, not the quantity, that determines whether you pass or fail."</strong></p>
+            <p>One hour of active recall beats three hours of passively re-reading your notes — memory retention is 3x higher. Whether or not you know the scientifically correct study methods fundamentally changes the value of every hour you spend.</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon" style="background:var(--blue);">3</div>
+                <h4>Three Pillars</h4>
+            </div>
+            <ul>
+                <li><strong>Scientific Study Methods</strong> — Spaced repetition, active recall, interleaving</li>
+                <li><strong>Strategic Subject Planning</strong> — Math and English first; 80/20 focus on high-frequency topics</li>
+                <li><strong>Brain Optimization</strong> — 8+ hours of sleep, exercise, and nutrition to maximize cognitive function</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon" style="background:var(--green);">#</div>
+                <h4>Key Numbers</h4>
+            </div>
+            <ul>
+                <li>The minimum passing score for Tokyo University's Secondary Exam (二次試験, Niji Shiken) is about <strong>57-61%</strong> (excluding the most competitive Science III track)</li>
+                <li>The Common Test (共通テスト, Kyoutsu Test — Japan's national standardized exam) score of 1,000 points is <strong>compressed to just 110 points</strong> (only 20% of total)</li>
+                <li>The Secondary Exam at 440 points determines <strong>80%</strong> of your fate</li>
+                <li>Just as 30% of World Cup goals come from set pieces, <strong>past exam practice</strong> determines 30% of your success</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="alert alert-danger">
+        <strong>The core truth of this plan:</strong> "Tokyo University is an exam you can pass if you prepare correctly." The acceptance rate among those who actually sit for the Secondary Exam is about 30-35%. It's not 1 in 100 — it's 1 in 3. The question isn't "Are you smart enough?" but "Did you prepare correctly?"
+    </div>
+</div>
+
+<!-- ===== Gap Analysis ===== -->
+<div id="gap" class="section">
+    <h2 class="section-title">Gap Analysis: Hensachi 60 → Tokyo University Level</h2>
+    <p class="section-lead">Knowing the exact distance between where you are and where you need to be is the first step of any strategy.</p>
+
+    <table>
+        <thead>
+            <tr><th>Hensachi</th><th>Percentile</th><th>University Level</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>60</td><td>Top 15.9%</td><td>MARCH (Meiji, Aoyama Gakuin, Rikkyo, Chuo, Hosei — mid-tier private universities)</td><td><span class="tag tag-gold">Current Position</span></td></tr>
+            <tr><td>65</td><td>Top 6.7%</td><td>Lower Waseda/Keio ~ Sophia University</td><td><span class="tag tag-blue">End of Year 1 Target</span></td></tr>
+            <tr><td>68</td><td>Top 3.6%</td><td>Upper Waseda/Keio</td><td><span class="tag tag-blue">Mid-Year 2 Target</span></td></tr>
+            <tr><td>72</td><td>Top 1.4%</td><td>Tokyo Univ. borderline (Humanities II/III, Science II)</td><td><span class="tag tag-green">Summer of Year 3 Target</span></td></tr>
+            <tr><td>75</td><td>Top 0.6%</td><td>Tokyo Univ. safe zone (Humanities I, Science I)</td><td><span class="tag tag-red">Final Target</span></td></tr>
+        </tbody>
+    </table>
+
+    <h3>Why Is It Possible Starting from Hensachi 60?</h3>
+    <div class="card-grid">
+        <div class="card">
+            <h4>1. The Time Advantage</h4>
+            <p>Starting in April of Year 1 (10th grade) gives you approximately <strong>35 months</strong> of preparation. That's an overwhelming advantage over students who only commit in Year 2 or 3. Prep school surveys show that most students who achieved a 15+ point hensachi increase started in Year 1.</p>
+        </div>
+        <div class="card">
+            <h4>2. Hensachi 60 Is Not "Zero"</h4>
+            <p>You already have above-average academic ability. You understand middle school-level material. Build on this foundation with the right methods and it's absolutely reachable. You can progress at double the speed of someone starting from scratch.</p>
+        </div>
+        <div class="card">
+            <h4>3. You Only Need ~60% on the Secondary Exam</h4>
+            <p>The minimum passing score for Tokyo University's Secondary Exam (excluding Science III) is about <strong>57-61%</strong> every year (2025 results: Humanities I 61.1%, Science I 58.4%). You don't need to answer everything perfectly. A strategy of nailing 60% and picking up partial credit on the rest is highly effective.</p>
+        </div>
+    </div>
+
+    <h3>Estimated Study Hours Required</h3>
+    <table>
+        <thead>
+            <tr><th>Year</th><th>Weekdays</th><th>Weekends</th><th>Annual Total (approx.)</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Year 1 (10th grade)</td><td>3-4 hours</td><td>5-6 hours</td><td>~1,200 hours</td></tr>
+            <tr><td>Year 2 (11th grade)</td><td>4-5 hours</td><td>7-8 hours</td><td>~1,600 hours</td></tr>
+            <tr><td>Year 3 (12th grade)</td><td>6-8 hours</td><td>10-12 hours</td><td>~2,200 hours</td></tr>
+            <tr><td colspan="3"><strong>Total</strong></td><td><strong>~5,000 hours</strong></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- ===== Study Methods ===== -->
+<div id="study-methods" class="section">
+    <h2 class="section-title">Scientific Ranking of Study Methods</h2>
+    <p class="section-lead">Evidence-based study methods ranked by effectiveness, drawn from 350+ studies centered on Dunlosky et al. (2013)'s landmark review.</p>
+
+    <h3>Tier S: Scientifically Most Effective (Must-Use Methods)</h3>
+
+    <div class="card-grid">
+        <div class="card" style="border-top:4px solid var(--accent);">
+            <div class="card-header">
+                <div class="card-icon" style="background:var(--accent);">S1</div>
+                <h4>Active Recall</h4>
+            </div>
+            <p><strong>Effect:</strong> Memory retention improves by <strong>50-150%</strong> compared to passive re-reading</p>
+            <p>Instead of re-reading your textbook, try to recall "what was written" from memory. By testing yourself, you strengthen the brain's retrieval pathways (the testing effect).</p>
+            <p><strong>How to practice:</strong></p>
+            <ul>
+                <li>Read one page of a textbook, close it, and write everything you remember on a blank sheet</li>
+                <li>Use flashcard apps (like Anki) to quiz yourself</li>
+                <li>Without looking at your notes, try to reconstruct the day's lesson from memory</li>
+            </ul>
+        </div>
+        <div class="card" style="border-top:4px solid var(--accent);">
+            <div class="card-header">
+                <div class="card-icon" style="background:var(--accent);">S2</div>
+                <h4>Spaced Repetition</h4>
+            </div>
+            <p><strong>Effect:</strong> Long-term memory retention improves by <strong>200%+</strong> compared to cramming</p>
+            <p>Based on Ebbinghaus's forgetting curve, reviewing material just as you're about to forget it maximizes retention.</p>
+            <p><strong>Optimal review intervals:</strong></p>
+            <ul>
+                <li>1st review: <strong>1 day later</strong></li>
+                <li>2nd review: <strong>3 days later</strong></li>
+                <li>3rd review: <strong>7 days later</strong></li>
+                <li>4th review: <strong>21 days later</strong></li>
+                <li>5th review: <strong>60 days later</strong></li>
+            </ul>
+            <p><strong>Tool:</strong> Anki (free app) is the ultimate tool. It automatically calculates optimal intervals for you.</p>
+        </div>
+        <div class="card" style="border-top:4px solid var(--accent);">
+            <div class="card-header">
+                <div class="card-icon" style="background:var(--accent);">S3</div>
+                <h4>Interleaving</h4>
+            </div>
+            <p><strong>Effect:</strong> <strong>25-76% improvement</strong> in scores compared to blocked practice (studying one topic at a time)</p>
+            <p>Instead of solving the same type of problem repeatedly, mix different types together. This trains your ability to identify which approach to use for each problem.</p>
+            <p><strong>How to practice:</strong></p>
+            <ul>
+                <li>Math: Rotate between probability → calculus → vectors → probability...</li>
+                <li>English: Rotate grammar → reading comprehension → writing → listening</li>
+                <li>The actual exam IS interleaved — get used to it in practice</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>Tier A: Highly Effective (Use These Actively)</h3>
+
+    <div class="card-grid">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon" style="background:var(--blue);">A1</div>
+                <h4>Elaborative Interrogation</h4>
+            </div>
+            <p>Repeatedly ask "Why?" and "How?" about what you've learned. Depth of understanding directly correlates with strength of memory.</p>
+            <p><strong>Example:</strong> "The French Revolution happened" → "Why at this particular time?" → "Because fiscal collapse and the spread of Enlightenment ideas coincided"</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon" style="background:var(--blue);">A2</div>
+                <h4>The Feynman Technique</h4>
+            </div>
+            <p>Explain what you've learned <strong>as if teaching an elementary school student</strong>. Wherever you stumble in your explanation is where you don't truly understand. Invented by Nobel Prize-winning physicist Richard Feynman.</p>
+            <p><strong>Steps:</strong> (1) Choose a concept → (2) Write an explanation in simple language on blank paper → (3) Go back to the textbook wherever you got stuck → (4) Rewrite it even more simply</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon" style="background:var(--blue);">A3</div>
+                <h4>Learning by Teaching (The Protege Effect)</h4>
+            </div>
+            <p>Teaching others pushes memory retention to approximately <strong>90%</strong> (the Learning Pyramid). The process of reorganizing material to teach it deepens your own understanding.</p>
+            <p><strong>How to practice:</strong> Teach a friend, explain what you learned today to your family, or lecture to a stuffed animal (the Rubber Duck method)</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon" style="background:var(--blue);">A4</div>
+                <h4>Dual Coding</h4>
+            </div>
+            <p>Combine verbal and visual information when studying. Use diagrams, mind maps, and flowcharts. Encoding through two different brain pathways doubles the retrieval cues available.</p>
+        </div>
+    </div>
+
+    <h3>Tier F: Low Effectiveness (Stop Doing These Immediately)</h3>
+
+    <div class="alert alert-danger">
+        <strong>Study methods scientifically proven to be ineffective:</strong>
+        <ul style="margin-top:8px;">
+            <li><strong>Highlighting with markers</strong> — Creates the illusion of "I highlighted it = I learned it." Virtually zero effect on memory retention</li>
+            <li><strong>Re-reading the textbook</strong> — Reading material a second time yields almost no additional memory despite the effort. Dangerous because it creates a false sense of understanding</li>
+            <li><strong>Copying notes verbatim</strong> — Your hands are moving but your brain isn't working. Unless you're summarizing or restructuring, it's meaningless</li>
+            <li><strong>Cramming (massed practice)</strong> — Works for short-term tests but is almost completely forgotten within a week. 1/200th the efficiency of spaced repetition</li>
+        </ul>
+    </div>
+
+    <h3>Study Method Effectiveness Comparison</h3>
+    <div class="effectiveness-bar"><span class="label">Active Recall</span><div class="bar"><div class="bar-fill" style="width:95%;background:var(--accent);">★★★★★</div></div></div>
+    <div class="effectiveness-bar"><span class="label">Spaced Repetition</span><div class="bar"><div class="bar-fill" style="width:95%;background:var(--accent);">★★★★★</div></div></div>
+    <div class="effectiveness-bar"><span class="label">Interleaving</span><div class="bar"><div class="bar-fill" style="width:85%;background:var(--accent);">★★★★☆</div></div></div>
+    <div class="effectiveness-bar"><span class="label">Elaborative Interrogation</span><div class="bar"><div class="bar-fill" style="width:80%;background:var(--gold);">★★★★</div></div></div>
+    <div class="effectiveness-bar"><span class="label">Feynman Technique</span><div class="bar"><div class="bar-fill" style="width:80%;background:var(--gold);">★★★★</div></div></div>
+    <div class="effectiveness-bar"><span class="label">Teaching Others</span><div class="bar"><div class="bar-fill" style="width:78%;background:var(--gold);">★★★★</div></div></div>
+    <div class="effectiveness-bar"><span class="label">Mind Mapping</span><div class="bar"><div class="bar-fill" style="width:55%;background:var(--blue);">★★★</div></div></div>
+    <div class="effectiveness-bar"><span class="label">Summarizing Notes</span><div class="bar"><div class="bar-fill" style="width:45%;background:var(--blue);">★★☆</div></div></div>
+    <div class="effectiveness-bar"><span class="label">Highlighting</span><div class="bar"><div class="bar-fill" style="width:15%;background:#999;">★</div></div></div>
+    <div class="effectiveness-bar"><span class="label">Re-reading Textbooks</span><div class="bar"><div class="bar-fill" style="width:12%;background:#999;">★</div></div></div>
+</div>
+
+<!-- ===== Memory Science ===== -->
+<div id="memory" class="section">
+    <h2 class="section-title">The Science of Memory</h2>
+    <p class="section-lead">Understanding how the brain forms, stores, and retrieves memories can dramatically improve your study efficiency.</p>
+
+    <h3>The Three Stages of Memory</h3>
+    <div class="phase-grid">
+        <div class="phase-item">
+            <div class="phase-number">1</div>
+            <h4>Encoding</h4>
+            <p>The stage of inputting information into the brain. Deeper processing (thinking about meaning, making connections) creates stronger encoding. Shallow processing (just looking, highlighting) is weak.</p>
+        </div>
+        <div class="phase-item">
+            <div class="phase-number">2</div>
+            <h4>Consolidation</h4>
+            <p>The stage where memories transfer from the hippocampus to the cerebral cortex. This happens most actively <strong>during sleep</strong>. This is why all-night study sessions are pointless.</p>
+        </div>
+        <div class="phase-item">
+            <div class="phase-number">3</div>
+            <h4>Retrieval</h4>
+            <p>The stage of pulling memories back out. Each act of retrieval <strong>strengthens</strong> the memory (the testing effect). That's why active recall is the most powerful technique.</p>
+        </div>
+    </div>
+
+    <h3>Memory Techniques</h3>
+    <div class="card-grid">
+        <div class="card">
+            <h4>Chunking</h4>
+            <p>Working memory capacity is <strong>7 plus or minus 2 items</strong> (Miller's Law). By grouping information into meaningful chunks, you can effectively expand your memory capacity.</p>
+            <p><strong>Example:</strong> Phone number 09012345678 → 090-1234-5678 (11 digits → 3 chunks)</p>
+        </div>
+        <div class="card">
+            <h4>Memory Palace (Method of Loci)</h4>
+            <p>Used by 90% of memory champions, this is the oldest and most powerful memory technique. Mentally walk through a familiar place (like your home) and "place" items you want to remember at each location. Spatial memory is the type of memory the human brain excels at most.</p>
+        </div>
+        <div class="card">
+            <h4>Sleep and Memory</h4>
+            <p>The first half of sleep (NREM slow-wave sleep) consolidates factual memories, while the second half (REM sleep) strengthens procedural memory and creative problem-solving. <strong>Reviewing for 30 minutes before bed</strong> improves memory retention by 20-30%.</p>
+        </div>
+        <div class="card">
+            <h4>Exercise and Memory</h4>
+            <p>Aerobic exercise increases BDNF (Brain-Derived Neurotrophic Factor) by <strong>20-30%</strong> and promotes neurogenesis in the hippocampus. A 20-minute jog before studying improves test scores by 5-10% (Hillman et al., 2009).</p>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Concentration ===== -->
+<div id="concentration" class="section">
+    <h2 class="section-title">The Science of Focus</h2>
+    <p class="section-lead">Focus isn't a talent — it's a skill. It can be scientifically managed and strengthened.</p>
+
+    <h3>Three Laws That Govern Focus</h3>
+    <ul class="principle-list">
+        <li>
+            <strong>Law 1: The Ultradian Rhythm (90-Minute Cycle)</strong>
+            The human brain naturally alternates between ~90 minutes of focus and 15-20 minutes of rest. Focus efficiency drops sharply beyond 90 minutes. The <strong>Pomodoro Technique (25 minutes of focus + 5-minute break)</strong> is the most practical unit within this rhythm. Take a longer break after 4 Pomodoros (~2 hours).
+        </li>
+        <li>
+            <strong>Law 2: Deep Work (Cal Newport)</strong>
+            For cognitively demanding tasks (math proofs, essay writing, etc.), "attention residue" gets in the way. There are levels of thinking you can only reach in a state of <strong>deep, distraction-free focus</strong> — free from email, social media, and notifications. Put your phone in another room (University of Texas research: having a smartphone on your desk reduces cognitive capacity by ~10%, even if it's turned off).
+        </li>
+        <li>
+            <strong>Law 3: Flow State (Csikszentmihalyi)</strong>
+            The "immersive state" that occurs when the difficulty of a task matches your skill level. In flow, your sense of time disappears and performance is maximized. Working on problems that are <strong>slightly challenging but not impossible</strong> makes flow more likely. Too easy = boredom. Too hard = anxiety.
+        </li>
+    </ul>
+
+    <h3>Things That Destroy Your Focus</h3>
+    <table>
+        <thead><tr><th>Factor</th><th>Impact on Focus</th><th>Countermeasure</th></tr></thead>
+        <tbody>
+            <tr><td>Smartphone notifications</td><td>Each notification takes <strong>23 minutes</strong> to recover focus</td><td>Airplane mode while studying. Put it in another room</td></tr>
+            <tr><td>Social media</td><td>Fragments attention. Multitasking reduces efficiency by <strong>40%</strong></td><td>Set app timers. Block during study hours</td></tr>
+            <tr><td>Sleep deprivation</td><td>2 weeks of 6-hour nights = <strong>same cognitive decline as 48 hours without sleep</strong></td><td>Protect 8+ hours of sleep at all costs</td></tr>
+            <tr><td>Dehydration</td><td>Just 1-2% dehydration <strong>significantly impairs</strong> attention and working memory</td><td>Keep water within arm's reach. 2+ liters per day</td></tr>
+            <tr><td>Music with lyrics</td><td><strong>Clearly reduces</strong> efficiency on reading and memorization tasks</td><td>Silence, ambient sounds, or instrumental music only</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- ===== Motivation ===== -->
+<div id="motivation" class="section">
+    <h2 class="section-title">Motivation Theory</h2>
+    <p class="section-lead">Over 3 years of exam preparation, the biggest enemy is "losing the will to continue." Motivation should be managed through systems, not feelings.</p>
+
+    <div class="card-grid">
+        <div class="card" style="border-top:4px solid var(--accent);">
+            <h4>Self-Determination Theory (Deci & Ryan)</h4>
+            <p>Intrinsic motivation is maximized when three basic needs are met:</p>
+            <ul>
+                <li><strong>Autonomy</strong> — The feeling that "I chose this" rather than "I'm being forced." Choose your own study content, order, and location</li>
+                <li><strong>Competence</strong> — The sense that "I'm getting better." Accumulate small wins. Visualize your mock exam score trends</li>
+                <li><strong>Relatedness</strong> — Connection with peers and mentors. Find 1-2 study partners</li>
+            </ul>
+        </div>
+        <div class="card" style="border-top:4px solid var(--blue);">
+            <h4>The Science of Habits (Atomic Habits)</h4>
+            <p>Don't rely on motivation. Turn it into a <strong>habit</strong> and your body will move even when your willpower doesn't.</p>
+            <ul>
+                <li><strong>Cue</strong> — Set action triggers like "when I get home from school" or "after dinner"</li>
+                <li><strong>The 2-Minute Rule</strong> — "Just do 2 minutes" to eliminate startup resistance</li>
+                <li><strong>Environment Design</strong> — Leave tomorrow's first study book open on your desk</li>
+                <li><strong>Habit Stacking</strong> — Attach new habits to existing ones (brushing teeth → 5 min of English vocab)</li>
+                <li><strong>Identity</strong> — Don't act as "a person who studies" but as "someone who is becoming a Tokyo University student"</li>
+            </ul>
+        </div>
+        <div class="card" style="border-top:4px solid var(--green);">
+            <h4>GRIT (The Power of Perseverance)</h4>
+            <p>Angela Duckworth's research: <strong>GRIT (passion x perseverance)</strong> predicts long-term success better than IQ.</p>
+            <ul>
+                <li>Talent determines the speed at which you acquire skills</li>
+                <li>Effort is multiplied <strong>twice</strong> — once for skill acquisition and once for skill application</li>
+                <li><strong>Talent x Effort = Skill, Skill x Effort = Achievement</strong></li>
+                <li>In other words, effort counts as IQ squared</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>The Science of Beating Procrastination</h3>
+    <div class="comparison-grid">
+        <div class="comparison-box">
+            <div class="cb-header" style="background:var(--accent);">Why We Procrastinate</div>
+            <div class="cb-body">
+                <ul>
+                    <li><strong>Temporal Discounting</strong> — The brain overvalues "pleasure now" vs. "future rewards"</li>
+                    <li><strong>Perfectionism</strong> — "If I can't do it perfectly, I don't want to start"</li>
+                    <li><strong>Task Ambiguity</strong> — "I don't even know what I should be doing"</li>
+                    <li><strong>Discomfort Avoidance</strong> — Running from difficult subjects (the amygdala's defense response)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="comparison-box">
+            <div class="cb-header" style="background:var(--green);">Scientific Countermeasures</div>
+            <div class="cb-body">
+                <ul>
+                    <li><strong>The 2-Minute Rule</strong> — "Just 2 minutes" eliminates startup friction. Once started, the brain tends to keep going</li>
+                    <li><strong>Implementation Intentions</strong> — Decide "when, where, and what" in advance ("If-Then" planning)</li>
+                    <li><strong>Temptation Bundling</strong> — Pair something you enjoy (music, etc.) with studying</li>
+                    <li><strong>Task Decomposition</strong> — Change "Study math" into "Solve example problem 3 on p.52 of Blue Chart (青チャート)"</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Year 1 ===== -->
+<div id="year1" class="section">
+    <h2 class="section-title">Year 1 (10th Grade): Building Foundations — "Building the Engine"</h2>
+    <p class="section-lead">Pour 70% of your energy into locking down math and English fundamentals. These two subjects are the hardest to catch up on later.</p>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <h4>April-June: Diagnosis and Foundation Building</h4>
+            <p><strong>Math:</strong> Review all middle school material → Work through the Math IA textbook carefully. Goal: understand WHY each formula works, not just memorize it.</p>
+            <p><strong>English:</strong> Start System Eitan (システム英単語, systematic vocabulary book) or Target 1900 (vocabulary book). Use Evergreen/Forest (grammar references) to grasp the grammar system. Pace: 30 new words per day.</p>
+            <p><strong>Classical Japanese (Kobun):</strong> Completely memorize the auxiliary verb conjugation tables. Start Gorogo (ゴロゴ, mnemonic vocabulary book) or Kobun Tango 315 (古文単語315, classical vocabulary).</p>
+            <p><strong>Daily routine:</strong> Math 1.5h + English 1h + Classical Japanese 0.5h = 3h/day</p>
+        </div>
+        <div class="timeline-item">
+            <h4>July-August: The First Summer Offensive</h4>
+            <p><strong>Math:</strong> Blue Chart (青チャート, comprehensive problem collection) IA — all example problems + Practice A. Pace: 10 problems per day.</p>
+            <p><strong>English:</strong> Reach 1,500 words. Start Kiso Eibun Mondai Seiko (基礎英文問題精講, foundational English reading). 15 min of English reading daily.</p>
+            <p><strong>Classical Japanese/Classical Chinese:</strong> Master auxiliary verbs. Cover basic Kanbun (classical Chinese) sentence patterns with Kanbun Yama no Yama (漢文ヤマのヤマ).</p>
+            <p><strong>Study time:</strong> 5-6h/day | <strong>Mock exam target:</strong> Hensachi 62-63</p>
+        </div>
+        <div class="timeline-item">
+            <h4>September-December: Acceleration Phase</h4>
+            <p><strong>Math:</strong> Continue Blue Chart (青チャート) IA + start Math IIB textbook.</p>
+            <p><strong>English:</strong> 2,500 words. Begin basic essay writing (simple diary entries in English).</p>
+            <p><strong>Science/Social Studies:</strong> Read through your chosen elective textbooks as "pleasure reading" (no memorization required — just understand the flow).</p>
+        </div>
+        <div class="timeline-item">
+            <h4>January-March: Year 1 Final Reckoning</h4>
+            <p><strong>Math:</strong> Complete Blue Chart (青チャート) IA → Begin Blue Chart IIB.</p>
+            <p><strong>English:</strong> 3,000 words. Complete grammar workbook.</p>
+            <p><strong>Mock exams:</strong> Kawai or Sundai mock exam → <strong>Target: Hensachi 63-65</strong></p>
+        </div>
+    </div>
+
+    <h3>Textbooks for Year 1</h3>
+    <table>
+        <thead><tr><th>Subject</th><th>Material</th><th>Purpose</th></tr></thead>
+        <tbody>
+            <tr><td><span class="tag tag-red">Math</span></td><td>Blue Chart (青チャート) IA/IIB</td><td>Master all fundamental patterns</td></tr>
+            <tr><td><span class="tag tag-blue">English</span></td><td>System Eitan (システム英単語) / Target 1900</td><td>Vocabulary foundation</td></tr>
+            <tr><td><span class="tag tag-blue">English</span></td><td>Vintage / Next Stage</td><td>Complete grammar system</td></tr>
+            <tr><td><span class="tag tag-blue">English</span></td><td>Kiso Eibun Mondai Seiko (基礎英文問題精講)</td><td>Foundational reading skills</td></tr>
+            <tr><td><span class="tag tag-green">Classical Jpn</span></td><td>Kobun Tango 315 (古文単語315) / Gorogo (ゴロゴ)</td><td>Classical vocabulary</td></tr>
+            <tr><td><span class="tag tag-green">Classical Jpn</span></td><td>Step Up Note 30 (ステップアップノート30)</td><td>Grammar drills</td></tr>
+            <tr><td><span class="tag tag-gold">Classical Chinese</span></td><td>Kanbun Yama no Yama (漢文ヤマのヤマ)</td><td>Basic sentence patterns</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- ===== Year 2 ===== -->
+<div id="year2" class="section">
+    <h2 class="section-title">Year 2 (11th Grade): Building Strength — "Picking Up Speed"</h2>
+    <p class="section-lead">Shift from "understanding" to "mastery." Start touching Tokyo University-level problems. Summer break is the single most important study period of the entire 3 years.</p>
+
+    <div class="alert alert-warning">
+        <strong>Critical: Summer break of Year 2 decides everything.</strong> The gap between students who put in 8-10h/day this summer and those who took it easy can never be closed. Goals for this summer: complete all Blue Chart (青チャート) volumes, reach 5,000 vocabulary words, and finish a full read-through of science/social studies textbooks.
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <h4>April-June: Going Deeper</h4>
+            <p><strong>Math:</strong> Continue Blue Chart (青チャート) IIB. Science-track students begin Math III. Start Ichi-tai-Ichi Taiou (1対1対応, one-to-one correspondence problem sets) IA.</p>
+            <p><strong>English:</strong> 4,000 words. Porepore Eibun Dokkai (ポレポレ英文読解, advanced reading) or Eibun Dokkai no Toushizu (英文読解の透視図, reading transparency). Begin Japanese-to-English translation practice.</p>
+            <p><strong>Science/Social Studies:</strong> Begin serious textbook study. Butsuri no Essence (物理のエッセンス, physics essentials) / World History B textbook.</p>
+        </div>
+        <div class="timeline-item" style="border-left:3px solid var(--accent);">
+            <h4>July-August: The Decisive Summer [MOST IMPORTANT]</h4>
+            <p><strong>Math:</strong> Complete Blue Chart (青チャート) IIB (+III). Begin Ichi-tai-Ichi Taiou (1対1対応) IIB.</p>
+            <p><strong>English:</strong> 5,000 words. Complete Porepore (ポレポレ). "Read" past Tokyo University exams (you don't need to solve them yet — just get a feel for the level).</p>
+            <p><strong>Science/Social Studies:</strong> Complete first pass through the entire curriculum.</p>
+            <p><strong>Study time:</strong> 8-10h/day | <strong>Take Tokyo University mock exam for the first time</strong> (scores don't matter — the experience is the goal)</p>
+        </div>
+        <div class="timeline-item">
+            <h4>September-March: Challenging Tokyo University Level</h4>
+            <p><strong>Math:</strong> All volumes of Ichi-tai-Ichi Taiou (1対1対応). Start on past Tokyo University exams (begin with easier years from the 1990s).</p>
+            <p><strong>English:</strong> Past exam practice (1-2 years' worth per month). Essay writing training (Z-Kai correspondence course).</p>
+            <p><strong>Mock exams:</strong> Kawai/Sundai mock exam → <strong>Target: Hensachi 68-70</strong></p>
+            <p><strong>Tokyo University mock exams:</strong> Getting a C or D rating is on track (B or above at this stage is rare)</p>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Year 3 ===== -->
+<div id="year3" class="section">
+    <h2 class="section-title">Year 3 (12th Grade): Battle Mode — "Winning the Fight"</h2>
+    <p class="section-lead">All new learning ends by August. From September onward, it's nothing but past exam practice and weakness repair. Peak performance must be timed for February.</p>
+
+    <div class="phase-grid">
+        <div class="phase-item">
+            <div class="phase-number">Spr</div>
+            <h4>April-July</h4>
+            <p>Final new material. Tokyo University-level practice with Platika (プラチカ) / Yasashii Rikei Suugaku (やさ理, "gentle" advanced math) / Shin Suta En (新スタ演). Complete all curricula.</p>
+        </div>
+        <div class="phase-item">
+            <div class="phase-number">Sum</div>
+            <h4>August</h4>
+            <p>10-12h/day. Full immersion in past exams. Work through 5-10 years across all subjects. Target: B rating on August's Tokyo University mock.</p>
+        </div>
+        <div class="phase-item">
+            <div class="phase-number">F/W</div>
+            <h4>September-February</h4>
+            <p>Past exams + weakness repair. From November, shift 40-70% to Common Test (共通テスト) prep. After the January Common Test, go all-in on the Secondary Exam (二次試験).</p>
+        </div>
+    </div>
+
+    <h3>Year 3: Monthly Allocation Between Common Test and Secondary Exam</h3>
+    <table>
+        <thead><tr><th>Month</th><th>Secondary Exam (二次試験)</th><th>Common Test (共通テスト)</th><th>Main Activities</th></tr></thead>
+        <tbody>
+            <tr><td>Apr-Aug</td><td>90%</td><td>10%</td><td>Past exam practice, final reinforcement of weak subjects</td></tr>
+            <tr><td>Sep-Oct</td><td>80%</td><td>20%</td><td>Aim for A/B rating on autumn Tokyo University mock</td></tr>
+            <tr><td>Nov</td><td>60%</td><td>40%</td><td>Begin Common Test prep. Practice format-specific questions for science/social studies</td></tr>
+            <tr><td>Dec</td><td>30%</td><td>70%</td><td>5-10 sets of Common Test practice packs. Time management drills</td></tr>
+            <tr><td>Early Jan</td><td>10%</td><td>90%</td><td>Final Common Test tune-up. Target: <strong>860+/1,000</strong> (86%+)</td></tr>
+            <tr><td>Late Jan-Feb</td><td>100%</td><td>0%</td><td>All-in on Secondary Exam. Remaining past exams + redo. <strong>Target: 260+/440 (59%+)</strong></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- ===== Subjects ===== -->
+<div id="subjects" class="section">
+    <h2 class="section-title">Subject-by-Subject Guide</h2>
+    <p class="section-lead">Understand what each Tokyo University subject demands and at what level, then design the optimal study path.</p>
+
+    <h3>Tokyo University Secondary Exam Score Structure</h3>
+    <div class="comparison-grid">
+        <div class="comparison-box">
+            <div class="cb-header" style="background:var(--secondary);">Humanities Track (Bunka — Humanities I/II/III)</div>
+            <div class="cb-body">
+                <ul>
+                    <li><strong>Japanese 120 pts</strong> (150 min) — Modern Japanese + Classical Japanese + Classical Chinese</li>
+                    <li><strong>Math 80 pts</strong> (100 min) — 4 humanities-track math problems</li>
+                    <li><strong>English 120 pts</strong> (120 min) — Reading + writing + translation + summary + listening</li>
+                    <li><strong>History/Geography 120 pts</strong> (150 min) — Choose 2 subjects (World History / Japanese History / Geography)</li>
+                    <li>Total 440 pts + Compressed Common Test 110 pts = <strong>550 pts maximum</strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="comparison-box">
+            <div class="cb-header" style="background:var(--accent);">Science Track (Rika — Science I/II/III)</div>
+            <div class="cb-body">
+                <ul>
+                    <li><strong>Math 120 pts</strong> (150 min) — 6 science-track math problems</li>
+                    <li><strong>English 120 pts</strong> (120 min) — Reading + writing + translation + summary + listening</li>
+                    <li><strong>Japanese 80 pts</strong> (100 min) — Modern Japanese + Classical Japanese</li>
+                    <li><strong>Science 120 pts</strong> (150 min) — Choose 2 (Physics / Chemistry / Biology / Earth Science)</li>
+                    <li>Total 440 pts + Compressed Common Test 110 pts = <strong>550 pts maximum</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h3>Math — The Subject That Creates the Biggest Gaps</h3>
+    <div class="alert alert-info">
+        <strong>Textbook Route:</strong> Textbook understanding → Blue Chart (青チャート, examples + practice) → Ichi-tai-Ichi Taiou (1対1対応の演習, one-to-one problem sets) → Platika (プラチカ) / Yasashii Rikei Suugaku (やさしい理系数学) → Shin Suugaku Enshuu (新数学演習, for top students only) → Tokyo University Past 25 Years
+    </div>
+    <p><strong>Iron Rules for Tokyo University Math:</strong></p>
+    <ul class="principle-list">
+        <li><strong>Understand formulas well enough to derive them yourself.</strong> Tokyo University asks "why does this formula hold true?" Rote memorization won't work.</li>
+        <li><strong>The "3-Attempt Rule"</strong> — (1) Think for 15-20 min → (2) Look only at hints, try again for 10 min → (3) Read the solution, close the book, and reproduce it from memory.</li>
+        <li><strong>High-frequency topics:</strong> Sequences, integrals/area, probability, vectors, number theory, complex plane (science track)</li>
+        <li><strong>Always earn partial credit.</strong> Tokyo University uses written-answer format. Write your reasoning carefully and you'll score points even without the final answer. Leaving it blank is the worst possible move.</li>
+    </ul>
+
+    <h3>English — Can Become a Reliable Score Source</h3>
+    <table>
+        <thead><tr><th>Stage</th><th>Vocabulary Target</th><th>Materials</th></tr></thead>
+        <tbody>
+            <tr><td>End of Year 1</td><td>3,000 words</td><td>System Eitan Basic (システム英単語Basic) → System Eitan (システム英単語)</td></tr>
+            <tr><td>End of Year 2</td><td>5,500 words</td><td>Above + Sokudoku Eitango Joukyuu-hen (速読英単語上級編, advanced speed-reading vocabulary)</td></tr>
+            <tr><td>End of Year 3</td><td>7,000+ words</td><td>Above + vocabulary from past Tokyo University exams</td></tr>
+        </tbody>
+    </table>
+    <p><strong>What makes Tokyo University English unique:</strong> It tests Japanese-to-English translation, English-to-Japanese translation, summarization, and paragraph writing — it's all about the ability to <strong>write</strong>. Build a habit of writing 3-5 English sentences daily starting in Year 1.</p>
+
+    <h3>Japanese — Classical Japanese and Classical Chinese Are "Best ROI"</h3>
+    <p>Classical Japanese grammar and Classical Chinese sentence patterns require a <strong>finite amount of memorization</strong> for reliable scoring. While Modern Japanese is hard to prepare for strategically, classical subjects are "study it and score it" — the best return on investment. Top priority in Year 1: perfectly memorize all 28 auxiliary verb conjugations.</p>
+
+    <h3>Science/Social Studies — Fighting on Two Fronts (Secondary + Common Test)</h3>
+    <p>Complete one full pass through the curriculum by summer of Year 2 so you can begin past exam practice from autumn of Year 2. Common Test-specific formats (data interpretation, experimental analysis, etc.) should be addressed intensively from November of Year 3.</p>
+</div>
+
+<!-- ===== Brain Optimization ===== -->
+<div id="brain" class="section">
+    <h2 class="section-title">Maximizing Brain Power</h2>
+    <p class="section-lead">If study methods are software, then sleep, exercise, and nutrition are hardware. No software runs on broken hardware.</p>
+
+    <h3>TOP 10: Evidence-Based Actions to Boost Brain Performance</h3>
+    <table>
+        <thead><tr><th>Rank</th><th>Action</th><th>Expected Effect</th><th>Strength of Evidence</th></tr></thead>
+        <tbody>
+            <tr><td>1</td><td><strong>8-10 hours of sleep every night</strong></td><td>Prevents 25-40% cognitive decline</td><td><span class="tag tag-red">Strongest</span></td></tr>
+            <tr><td>2</td><td><strong>Aerobic exercise 4-5x/week (20-30 min)</strong></td><td>5-15% test score improvement, BDNF increase</td><td><span class="tag tag-red">Strongest</span></td></tr>
+            <tr><td>3</td><td><strong>30-minute review before bed</strong></td><td>20-30% better memory retention</td><td><span class="tag tag-red">Strongest</span></td></tr>
+            <tr><td>4</td><td><strong>Balanced diet (omega-3, berries)</strong></td><td>Maintains and improves baseline cognitive function</td><td><span class="tag tag-gold">Strong</span></td></tr>
+            <tr><td>5</td><td><strong>Stress management (breathing, exercise, expressive writing)</strong></td><td>Up to one full grade level improvement for anxious students</td><td><span class="tag tag-gold">Strong</span></td></tr>
+            <tr><td>6</td><td><strong>Optimized environment (22°C, bright light, no phone)</strong></td><td>10-25% improvement in focus and productivity</td><td><span class="tag tag-gold">Strong</span></td></tr>
+            <tr><td>7</td><td><strong>Handwritten notes</strong></td><td>Significantly better conceptual understanding than typing</td><td><span class="tag tag-blue">Moderate</span></td></tr>
+            <tr><td>8</td><td><strong>Morning sunlight (10-30 min)</strong></td><td>Resets circadian rhythm, promotes serotonin release</td><td><span class="tag tag-blue">Moderate</span></td></tr>
+            <tr><td>9</td><td><strong>30+ minutes of reading daily</strong></td><td>Builds vocabulary, sustained attention, and knowledge base</td><td><span class="tag tag-blue">Moderate</span></td></tr>
+            <tr><td>10</td><td><strong>Playing an instrument or learning a new language</strong></td><td>Structural brain changes, enhanced executive function</td><td><span class="tag tag-blue">Moderate</span></td></tr>
+        </tbody>
+    </table>
+
+    <h3>Sleep: The Most Underrated Study Tool</h3>
+    <div class="card-grid">
+        <div class="card">
+            <h4>Sleep Duration and Cognitive Ability</h4>
+            <div class="stat-bar-group"><div class="stat-bar-label"><span>8-10 hours (optimal)</span><span>100%</span></div><div class="stat-bar-track"><div class="stat-bar-fill" style="width:100%;background:var(--green);"></div></div></div>
+            <div class="stat-bar-group"><div class="stat-bar-label"><span>7 hours</span><span>90%</span></div><div class="stat-bar-track"><div class="stat-bar-fill" style="width:90%;background:var(--gold);"></div></div></div>
+            <div class="stat-bar-group"><div class="stat-bar-label"><span>6 hours (for 2 weeks)</span><span>75%</span></div><div class="stat-bar-track"><div class="stat-bar-fill" style="width:75%;background:var(--accent);"></div></div></div>
+            <div class="stat-bar-group"><div class="stat-bar-label"><span>5 hours</span><span>65%</span></div><div class="stat-bar-track"><div class="stat-bar-fill" style="width:65%;background:var(--accent);"></div></div></div>
+            <div class="stat-bar-group"><div class="stat-bar-label"><span>All-nighter</span><span>60%</span></div><div class="stat-bar-track"><div class="stat-bar-fill" style="width:60%;background:#999;"></div></div></div>
+            <p style="font-size:12px;color:#999;margin-top:8px;">Based on data from Matthew Walker's research lab</p>
+        </div>
+        <div class="card">
+            <h4>The Ultimate Nap Methods</h4>
+            <ul>
+                <li><strong>The NASA Nap (26 min)</strong> — NASA studied long-haul flight pilots and found that a 26-minute nap improved performance by 34% and alertness by 54%. How to: (1) Find a quiet place and close your eyes (2) Set an alarm for 26 minutes (3) It's OK if you don't fall fully asleep (just closing your eyes has an effect) (4) After waking, wash your face and walk for 2-3 minutes before resuming study. Best timing: between lunch and 3:00 PM</li>
+                <li><strong>The Coffee Nap (20 min)</strong> — Drink coffee, then immediately nap for 20 minutes. Caffeine kicks in (20-25 min) right as you wake up. 36% more effective than either alone</li>
+                <li><strong>Rule:</strong> No naps after 4:00 PM — they'll disrupt your nighttime sleep</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>Exercise: "Miracle-Gro" for the Brain</h3>
+    <p>When a school in Naperville, Illinois introduced an exercise program before classes, students went from average scores to <strong>ranking #1 in the world in science</strong> on the TIMSS international assessment.</p>
+    <div class="alert alert-success">
+        <strong>Minimum protocol:</strong> 4 times per week, 20-30 minutes of moderate-intensity aerobic exercise (jogging, brisk walking, swimming). Doing it before studying maximizes focus and encoding ability. Morning jogging is most effective.
+    </div>
+</div>
+
+<!-- ===== Daily Routine ===== -->
+<div id="routine" class="section">
+    <h2 class="section-title">The Ultimate Daily Routine</h2>
+    <p class="section-lead">A scientifically-grounded daily schedule designed to maximize study efficiency.</p>
+
+    <h3>Weekday Schedule</h3>
+    <table>
+        <thead><tr><th>Time</th><th>Activity</th><th>Scientific Rationale</th></tr></thead>
+        <tbody>
+            <tr><td>6:30-7:00</td><td>Wake up, get morning sunlight (10 min), drink 500ml water</td><td>Resets circadian rhythm, resolves dehydration</td></tr>
+            <tr><td>7:00-7:30</td><td>Breakfast (eggs + whole grain bread + fruit)</td><td>Glucose supply to brain, protein for stability</td></tr>
+            <tr><td>7:30-7:45</td><td>Quick review of yesterday's material (15 min)</td><td>Spaced repetition: the 1-day-later review</td></tr>
+            <tr><td>8:00-15:30</td><td>School (handwrite notes, stay hydrated)</td><td>Handwriting deepens conceptual understanding</td></tr>
+            <tr><td>15:30-18:00</td><td>Club activities (if in a sports club) or 30 min exercise + self-study</td><td>BDNF increase. OK to continue club activities until retirement (see below)</td></tr>
+            <tr><td>18:00-18:30</td><td>Commute home, shower, light snack</td><td>Transition ritual</td></tr>
+            <tr><td>18:30-19:15</td><td>Dinner (fish or meat + vegetables + fermented foods)</td><td>Omega-3, gut-brain axis</td></tr>
+            <tr><td>19:30-21:00</td><td><strong>Deep Study Block 1</strong> (hardest subject)</td><td>Post-dinner focus block. Secure at least 90 min</td></tr>
+            <tr><td>21:00-21:45</td><td><strong>Study Block 2</strong> (medium difficulty or Anki review)</td><td>Second study block</td></tr>
+            <tr><td>21:00-21:30</td><td>Quick review of the day's most important points</td><td>Pre-sleep review boosts retention 20-30%</td></tr>
+            <tr><td>21:30-22:00</td><td>Bath, reading, stretching (NO phone)</td><td>Prepares melatonin production</td></tr>
+            <tr><td>22:00-22:30</td><td>Lights out</td><td>Secures 8-8.5 hours of sleep</td></tr>
+        </tbody>
+    </table>
+
+    <div class="alert alert-warning">
+        <strong>Non-Negotiable Rules:</strong> (1) Never cut into 8 hours of sleep (studying at the expense of sleep is counterproductive) (2) Keep your phone in a different room while studying (3) Take at least half a day of complete rest once a week (burnout prevention)
+    </div>
+
+    <h3>Can You Balance Club Activities and Exam Prep?</h3>
+    <div class="alert alert-success">
+        <strong>Answer: Yes. In fact, students with club experience often have advantages.</strong>
+    </div>
+    <div class="card-grid">
+        <div class="card">
+            <h4>Benefits of Continuing Club Activities</h4>
+            <ul>
+                <li><strong>Cognitive benefits of exercise</strong> — Daily club activities directly increase BDNF, relieve stress, and improve focus. No need to carve out separate exercise time</li>
+                <li><strong>Time management skills</strong> — Having "limited time" actually improves study quality. The constraint eliminates lazy, unfocused studying</li>
+                <li><strong>Mental toughness</strong> — Pressure from competitions and tournaments directly builds the mental resilience needed on exam day</li>
+                <li><strong>GRIT</strong> — The perseverance built through club activities transfers directly to exam preparation</li>
+                <li><strong>Data:</strong> Surveys suggest that approximately 70% of students admitted to Tokyo University were in a club during high school</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h4>A Realistic Schedule for Club Members</h4>
+            <p><strong>Weekdays (with club):</strong> Study time is 2-2.5 hours after dinner. Looks small, but <strong>2 focused hours beat 5 distracted ones</strong>.</p>
+            <p><strong>Commute time:</strong> If you take the train, use Anki (English/classical vocab) for 30-60 minutes round trip. That alone is 200 hours per year.</p>
+            <p><strong>Morning 15 min:</strong> Quick review of yesterday's material before leaving (spaced repetition). Small but cumulative.</p>
+            <p><strong>Weekends:</strong> If club is in the morning, study 4-5 hours in the afternoon. If club is afternoon, study 3 hours in the morning.</p>
+            <p><strong>After retirement (late Year 2 to early Year 3):</strong> Study hours suddenly increase. This "gear shift" is the secret behind club members' late-stage growth.</p>
+        </div>
+        <div class="card">
+            <h4>Watch-Outs for Club Members</h4>
+            <ul>
+                <li><strong>Build a system that doesn't let "I'm tired" become an excuse</strong> — After getting home → shower → dinner, sit at your desk and open a textbook "for just 2 minutes"</li>
+                <li><strong>Focus on fundamentals in Year 1-2</strong> — Since you can't compete on volume, absolutely lock down math and English basics</li>
+                <li><strong>Ruthlessly exploit every gap</strong> — Commute, breaks, waiting time before club. Anki app is your best friend</li>
+                <li><strong>Plan for post-retirement early</strong> — If you suddenly start long study sessions after quitting club without any prior habit, you won't last. Maintain at least "1 hour per day minimum" while still in club</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Mental Management ===== -->
+<div id="mental" class="section">
+    <h2 class="section-title">Mental Health Management</h2>
+    <p class="section-lead">Over 3 years of exam preparation, you will inevitably face mental crises. These are not "abnormal" — they are "normal." Knowing about them in advance is how you handle them.</p>
+
+    <h3>Four Crises Every Exam Student Will Face</h3>
+    <div class="card-grid">
+        <div class="card">
+            <h4>Crisis 1: Month 3-4</h4>
+            <p>"I'm working hard but my mock exam scores aren't going up"</p>
+            <p><strong>The truth:</strong> Knowledge accumulates before it shows up in scores. There's always a time lag. This is the period between planting seeds and seeing them sprout. <strong>Just keep going.</strong></p>
+        </div>
+        <div class="card">
+            <h4>Crisis 2: Winter of Year 2</h4>
+            <p>"I got a D/E rating on the Tokyo University mock exam. Maybe I can't do this"</p>
+            <p><strong>The truth:</strong> D/E at the Year 2 stage is completely normal. Most students who ultimately pass had D ratings in Year 2. The big growth spurt comes in Year 3.</p>
+        </div>
+        <div class="card">
+            <h4>Crisis 3: Summer of Year 3</h4>
+            <p>"Other students seem more advanced than me"</p>
+            <p><strong>The truth:</strong> Your benchmark should be "yourself one month ago," not other people. Growth rate is what matters. Stop looking at other people's study reports on social media.</p>
+        </div>
+        <div class="card">
+            <h4>Crisis 4: Autumn of Year 3</h4>
+            <p>"Only 4 months left. I'm nowhere near ready"</p>
+            <p><strong>The truth:</strong> Not a single student in history has ever felt perfectly prepared. "Adequate preparation" is enough to pass. Trust your process and run to the finish line.</p>
+        </div>
+    </div>
+
+    <h3>Five Rules to Prevent Burnout</h3>
+    <ul class="principle-list">
+        <li><strong>1. One day of rest per week</strong> — Take a full day off or at least a half day. Your brain's Default Mode Network (DMN) needs this time to organize and integrate knowledge.</li>
+        <li><strong>2. Keep a study journal</strong> — Just 5 minutes per day. What did you learn? What was hard? What went well? On tough days, reading past entries shows you how far you've come.</li>
+        <li><strong>3. Never stop exercising</strong> — Even during peak exam season. Exercise is the most effective way to reduce cortisol (the stress hormone) by 15-25%.</li>
+        <li><strong>4. Have 1-2 study partners</strong> — Isolation is the greatest enemy. Have at least one weekly study session with someone who shares your goal.</li>
+        <li><strong>5. Practice self-compassion</strong> — Don't be too hard on yourself. Instead of "Today was terrible," try "Today I needed rest." Accept it and move on.</li>
+    </ul>
+</div>
+
+<!-- ===== Exam Day ===== -->
+<div id="exam-day" class="section">
+    <h2 class="section-title">Exam Day Strategy</h2>
+    <p class="section-lead">The protocol for extracting maximum value from 3 years of effort on the day that counts.</p>
+
+    <h3>Time Management During the Exam</h3>
+    <ul class="principle-list">
+        <li><strong>Spend the first 5 minutes scanning every question.</strong> Identify which problems are easy and which are hard. Start with the easy ones to lock in safe points.</li>
+        <li><strong>If you're stuck on one problem for 10+ minutes, move on.</strong> The worst pattern is burning time on a hard problem while leaving easy points on the table. You'll often solve it when you come back later.</li>
+        <li><strong>Save the last 10 minutes for review.</strong> Check for calculation errors, missing units, misread symbols. A point lost to careless mistakes is the same as a point lost on a hard problem.</li>
+        <li><strong>Never leave anything blank.</strong> Tokyo University uses written-answer format. Even a partial attempt earns partial credit. Writing anything is better than zero.</li>
+    </ul>
+
+    <h3>Pre-Exam Anxiety Management</h3>
+    <div class="card-grid">
+        <div class="card">
+            <h4>Physiological Sigh (Breathing Technique)</h4>
+            <p>Double inhale through the nose (sniff-sniff) → slow, long exhale through the mouth. Stanford University research proved this is <strong>the most effective technique for real-time stress reduction</strong>. Do 2-3 cycles right before the exam.</p>
+        </div>
+        <div class="card">
+            <h4>Expressive Writing</h4>
+            <p>Spend 10 minutes before the exam writing out your anxious thoughts on paper. University of Chicago research showed anxious students improved by <strong>nearly one full grade level</strong>. Getting the anxiety out frees up working memory.</p>
+        </div>
+        <div class="card">
+            <h4>Reappraisal</h4>
+            <p>Reframe "I'm nervous" as "I'm excited." Anxiety and excitement are physiologically almost identical states. Harvard research showed this improved GRE scores by <strong>22%</strong>.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Closing ===== -->
+<div class="section" style="background:var(--primary);color:#fff;text-align:center;padding:60px;">
+    <h2 style="color:var(--gold);font-size:24px;border:none;margin-bottom:15px;">Final Words</h2>
+    <p style="color:rgba(255,255,255,0.8);max-width:700px;margin:0 auto 20px;font-size:15px;">
+        Getting into Tokyo University from hensachi 60 is not a "miracle."<br>
+        Know the right methods. Follow the right sequence. Show up every single day.<br>
+        Whether you can keep doing that for 3 years is the only thing that separates those who pass from those who don't.
+    </p>
+    <p style="color:rgba(255,255,255,0.8);max-width:700px;margin:0 auto 20px;font-size:15px;">
+        Talent x Effort = Skill<br>
+        Skill x Effort = Achievement<br>
+        <strong>Effort is multiplied twice.</strong>
+    </p>
+    <p style="color:var(--gold);font-size:15px;font-weight:600;margin-bottom:20px;">
+        — J.K (just a former high school student)
+    </p>
+    <p style="color:rgba(255,255,255,0.3);font-size:11px;">
+        This document was created with AI (Claude) assistance. Based on learning science research, but individual results may vary.
+    </p>
+    <a href="https://www.buymeacoffee.com/kanesaka849" target="_blank" style="display:inline-block;padding:12px 28px;background:#FFDD00;color:#000;font-weight:700;font-size:14px;border-radius:8px;text-decoration:none;margin-top:15px;transition:transform 0.2s;">☕ Buy me a coffee if you found this useful</a>
+</div>
+
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+    const sections=document.querySelectorAll('.section[id]');
+    const navLinks=document.querySelectorAll('nav a');
+    const observer=new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                navLinks.forEach(link=>{
+                    link.classList.remove('active');
+                    if(link.getAttribute('href')==='#'+entry.target.id) link.classList.add('active');
+                });
+            }
+        });
+    },{rootMargin:'-20% 0px -80% 0px'});
+    sections.forEach(s=>observer.observe(s));
+    navLinks.forEach(link=>{
+        link.addEventListener('click',e=>{
+            e.preventDefault();
+            const target=document.querySelector(link.getAttribute('href'));
+            if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+        });
+    });
+    const fadeEls=document.querySelectorAll('.card,.principle-list li,.timeline-item');
+    const fadeObs=new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{if(entry.isIntersecting) entry.target.classList.add('visible');});
+    },{threshold:0.1});
+    fadeEls.forEach(el=>{el.classList.add('fade-in');fadeObs.observe(el);});
+});
+</script>
+</body>
+</html>

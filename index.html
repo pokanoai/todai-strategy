@@ -147,62 +147,30 @@
         .card ul { font-size:13px; padding-left:16px; color:#555; }
         .card li { margin-bottom:3px; }
 
-        table { width:100%; border-collapse:collapse; margin:14px 0; font-size:13px; }
-        thead th { background:var(--primary); color:#fff; padding:9px 12px; text-align:left; font-weight:600; }
-        tbody td { padding:9px 12px; border-bottom:1px solid var(--border); }
-        tbody tr:hover { background:rgba(26,26,46,0.03); }
-
         .alert { padding:14px 18px; border-radius:8px; margin:14px 0; font-size:13px; }
         .alert-info { background:#dbeafe; border-left:4px solid #3b82f6; }
         .alert-warning { background:#fef3c7; border-left:4px solid #f59e0b; }
         .alert-success { background:#d1fae5; border-left:4px solid #10b981; }
         .alert-danger { background:#fee2e2; border-left:4px solid #ef4444; }
 
-        .principle-list { list-style:none; padding:0; }
-        .principle-list li { padding:14px 18px; margin-bottom:7px; background:#fff; border-radius:6px; border-left:4px solid var(--accent); font-size:13px; }
-        .principle-list li strong { color:var(--primary); display:block; margin-bottom:3px; font-size:14px; }
-
-        .tag { display:inline-block; padding:2px 9px; border-radius:10px; font-size:11px; font-weight:600; margin:2px; }
-        .tag-red { background:#fee2e2; color:#dc2626; }
-        .tag-blue { background:#dbeafe; color:#2563eb; }
-        .tag-green { background:#d1fae5; color:#065f46; }
-        .tag-gold { background:#fef3c7; color:#92400e; }
-        .tag-purple { background:#ede9fe; color:#7c3aed; }
-
-        .stat-bar-group { margin:12px 0; }
-        .stat-bar-label { display:flex; justify-content:space-between; font-size:12px; margin-bottom:3px; }
-        .stat-bar-track { width:100%; height:8px; background:#ecf0f1; border-radius:4px; overflow:hidden; }
-        .stat-bar-fill { height:100%; border-radius:4px; }
-
-        .timeline { position:relative; padding-left:28px; }
-        .timeline::before { content:''; position:absolute; left:10px; top:0; bottom:0; width:2px; background:var(--border); }
-        .timeline-item { position:relative; margin-bottom:20px; padding:14px 18px; background:#fff; border-radius:8px; border:1px solid var(--border); }
-        .timeline-item::before { content:''; position:absolute; left:-23px; top:18px; width:10px; height:10px; border-radius:50%; background:var(--accent); border:2px solid #fff; }
-        .timeline-item h4 { margin-top:0; }
-        .timeline-item p { font-size:13px; }
-
-        .phase-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin:18px 0; border:1px solid var(--border); border-radius:8px; overflow:hidden; }
-        .phase-item { padding:22px 18px; text-align:center; border-right:1px solid var(--border); }
-        .phase-item:last-child { border-right:none; }
-        .phase-number { width:32px; height:32px; background:var(--accent); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; margin:0 auto 8px; }
-        .phase-item h4 { font-size:13px; margin-bottom:5px; }
-        .phase-item p { font-size:12px; color:#666; }
-
-        .comparison-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:18px 0; }
-        .comparison-box { background:#fff; border-radius:8px; border:1px solid var(--border); overflow:hidden; }
-        .comparison-box .cb-header { padding:10px 18px; font-weight:700; font-size:13px; color:#fff; }
-        .comparison-box .cb-body { padding:14px 18px; }
-        .comparison-box .cb-body ul { list-style:none; padding:0; }
-        .comparison-box .cb-body li { padding:5px 0; font-size:13px; border-bottom:1px solid #f0f0f0; }
-        .comparison-box .cb-body li:last-child { border-bottom:none; }
-
         .effectiveness-bar { display:flex; align-items:center; gap:10px; margin:6px 0; font-size:13px; }
         .effectiveness-bar .label { width:180px; flex-shrink:0; }
         .effectiveness-bar .bar { flex:1; height:22px; background:#ecf0f1; border-radius:4px; overflow:hidden; position:relative; }
         .effectiveness-bar .bar-fill { height:100%; border-radius:4px; display:flex; align-items:center; padding-left:8px; color:#fff; font-size:11px; font-weight:600; }
 
+        .toc-list { list-style:none; padding:0; margin:20px 0; }
+        .toc-list li { padding:14px 20px; margin-bottom:6px; background:#fff; border-radius:8px; border:1px solid var(--border); border-left:4px solid var(--accent); font-size:14px; display:flex; align-items:center; gap:12px; }
+        .toc-list li .toc-num { width:28px; height:28px; background:var(--accent); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; flex-shrink:0; }
+        .toc-list li strong { color:var(--primary); }
+
+        .cta-box { text-align:center; padding:50px 40px; background:linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, #2a2a5e 100%); border-radius:16px; margin:20px 0; }
+        .cta-box h2 { color:var(--gold); font-size:28px; margin-bottom:12px; border:none; }
+        .cta-box p { color:rgba(255,255,255,0.8); font-size:15px; max-width:600px; margin:0 auto 28px; }
+        .cta-btn { display:inline-block; padding:18px 48px; background:var(--accent); color:#fff; font-size:18px; font-weight:800; border-radius:12px; text-decoration:none; transition:transform 0.2s, box-shadow 0.2s; box-shadow:0 4px 20px rgba(233,69,96,0.4); }
+        .cta-btn:hover { transform:translateY(-2px); box-shadow:0 6px 28px rgba(233,69,96,0.5); }
+
         @media print { nav{display:none;} main{margin-left:0;} .hero{padding:40px;} .section{padding:30px;page-break-inside:avoid;} }
-        @media (max-width:768px) { nav{display:none;} main{margin-left:0;} .hero{padding:30px 20px;} .hero h1{font-size:24px;} .section{padding:25px 18px;} .phase-grid,.comparison-grid{grid-template-columns:1fr;} }
+        @media (max-width:768px) { nav{display:none;} main{margin-left:0;} .hero{padding:30px 20px;} .hero h1{font-size:24px;} .section{padding:25px 18px;} .cta-btn{font-size:16px;padding:14px 32px;} }
         .fade-in { opacity:0; transform:translateY(16px); transition:opacity 0.4s, transform 0.4s; }
         .fade-in.visible { opacity:1; transform:translateY(0); }
     </style>
@@ -215,23 +183,12 @@
         <p>偏差値60 → 東大現役合格</p>
     </div>
     <div class="section-label">概要</div>
-    <a href="#executive">エグゼクティブサマリー</a>
-    <a href="#gap">ギャップ分析</a>
-    <div class="section-label">学習科学</div>
-    <a href="#study-methods">勉強法ランキング</a>
-    <a href="#memory">記憶の科学</a>
-    <a href="#concentration">集中力の科学</a>
-    <a href="#motivation">モチベーション理論</a>
-    <div class="section-label">戦略</div>
-    <a href="#year1">高1：基盤構築</a>
-    <a href="#year2">高2：実力養成</a>
-    <a href="#year3">高3：実戦突破</a>
-    <a href="#subjects">科目別攻略</a>
-    <div class="section-label">最適化</div>
-    <a href="#brain">脳力最大化</a>
-    <a href="#routine">最強の日課</a>
-    <a href="#mental">メンタル管理</a>
-    <a href="#exam-day">試験当日戦略</a>
+    <a href="#hook">まず知るべき事実</a>
+    <a href="#study-methods">科学的勉強法</a>
+    <a href="#sleep">睡眠の科学</a>
+    <div class="section-label">完全版</div>
+    <a href="#full-contents">完全版の内容</a>
+    <a href="#cta">noteで読む</a>
     <div class="section-label">その他</div>
     <a href="#faq">よくある質問</a>
     <a href="#related">関連記事</a>
@@ -240,134 +197,43 @@
 <main>
 
 <div class="hero">
-    <p class="subtitle" style="margin-bottom:12px;">東大に行けなかった私が「もし高1に戻れたら…」と妄想してAIにつくらせた</p>
+    <p class="subtitle" style="margin-bottom:12px;">東大に行けなかった私が「もし高1に戻れたら...」と妄想してAIにつくらせた</p>
     <h1>偏差値60から東大現役合格への<br>完全戦略</h1>
     <p class="subtitle">あらゆる学習理論・脳科学・モチベーション研究をAIに分析させた、ガチの合格プラン</p>
     <div class="meta">
-        <span>Author: J.K — ただの元高校1年生</span>
+        <span>Author: J.K -- ただの元高校1年生</span>
         <span>対象：高校1年 4月スタート</span>
         <span>現在地：偏差値60</span>
         <span>目標：東京大学 現役合格</span>
     </div>
     <div style="display:flex;gap:10px;margin-top:20px;flex-wrap:wrap;">
-        <a href="https://www.buymeacoffee.com/kanesaka849" target="_blank" style="padding:10px 24px;background:#FFDD00;color:#000;font-weight:700;font-size:13px;border-radius:8px;text-decoration:none;">☕ 役に立ったらコーヒー1杯</a>
-        <a href="https://twitter.com/intent/tweet?text=%E6%9D%B1%E5%A4%A7%E3%81%AB%E8%A1%8C%E3%81%91%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E7%A7%81%E3%81%8C%E9%AB%981%E3%81%AB%E6%88%BB%E3%81%A3%E3%81%9F%E3%82%89%E3%81%A8%E5%A6%84%E6%83%B3%E3%81%97%E3%81%A6AI%E3%81%AB%E3%81%A4%E3%81%8F%E3%82%89%E3%81%9B%E3%81%9F&url=https://kanesaka849.github.io/todai-strategy/&via=jk_ai_lab" target="_blank" style="padding:10px 24px;background:#000;color:#fff;font-weight:700;font-size:13px;border-radius:8px;text-decoration:none;">𝕏 シェア</a>
-        <a href="en.html" style="padding:10px 24px;background:rgba(255,255,255,0.15);color:#fff;font-weight:700;font-size:13px;border-radius:8px;text-decoration:none;border:1px solid rgba(255,255,255,0.3);">🌐 English</a>
+        <a href="#cta" style="padding:10px 24px;background:var(--accent);color:#fff;font-weight:700;font-size:13px;border-radius:8px;text-decoration:none;">完全版をnoteで読む</a>
+        <a href="https://twitter.com/intent/tweet?text=%E6%9D%B1%E5%A4%A7%E3%81%AB%E8%A1%8C%E3%81%91%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E7%A7%81%E3%81%8C%E9%AB%981%E3%81%AB%E6%88%BB%E3%81%A3%E3%81%9F%E3%82%89%E3%81%A8%E5%A6%84%E6%83%B3%E3%81%97%E3%81%A6AI%E3%81%AB%E3%81%A4%E3%81%8F%E3%82%89%E3%81%9B%E3%81%9F&url=https://kanesaka849.github.io/todai-strategy/&via=jk_ai_lab" target="_blank" style="padding:10px 24px;background:#000;color:#fff;font-weight:700;font-size:13px;border-radius:8px;text-decoration:none;">X Share</a>
+        <a href="en.html" style="padding:10px 24px;background:rgba(255,255,255,0.15);color:#fff;font-weight:700;font-size:13px;border-radius:8px;text-decoration:none;border:1px solid rgba(255,255,255,0.3);">English</a>
     </div>
 </div>
 
 <!-- ===== Hook ===== -->
-<div class="section" style="background:linear-gradient(135deg, #fff7ed 0%, #fef3c7 100%); border-left:5px solid var(--accent); padding:40px 60px;">
+<div id="hook" class="section" style="background:linear-gradient(135deg, #fff7ed 0%, #fef3c7 100%); border-left:5px solid var(--accent); padding:40px 60px;">
     <p style="font-size:18px; font-weight:700; color:var(--primary); margin-bottom:18px;">受験生の皆さん、親御さん、こう考えたことはありませんか？</p>
     <p style="font-size:16px; color:var(--text); line-height:1.9; margin-bottom:14px;">
         <strong>「東大の二次試験、合格最低点は何%だと思いますか？90%？80%？...実は57-61%です。6割取れば受かる試験なんです。」</strong>
     </p>
     <p style="font-size:16px; color:var(--text); line-height:1.9; margin-bottom:14px;">
-        そして、もう一つ。<strong style="color:var(--accent);">蛍光ペンでハイライトしながら勉強していませんか？</strong>科学的にはほぼ効果ゼロと証明されています。
+        そして、もう一つ。<strong style="color:var(--accent);">蛍光ペンでハイライトしながら勉強していませんか？</strong>350以上の研究を分析した結果、科学的にはほぼ効果ゼロと証明されています。
+    </p>
+    <p style="font-size:16px; color:var(--text); line-height:1.9; margin-bottom:14px;">
+        逆に、記憶定着率を<strong>50-150%向上</strong>させる勉強法が存在します。そして、最も強力な「勉強法」は、意外にも<strong>8時間寝ること</strong>だったりする。
     </p>
     <p style="font-size:17px; font-weight:700; color:var(--accent);">
         あなたの勉強法、本当に正しいですか？
     </p>
 </div>
 
-<!-- ===== Executive Summary ===== -->
-<div id="executive" class="section">
-    <h2 class="section-title">偏差値60から東大合格への完全戦略｜エグゼクティブサマリー</h2>
-    <p class="section-lead">偏差値60（上位15.9%）から東大合格レベル（偏差値72-78、上位0.6-2.3%）への跳躍。3年間で約3,500〜5,000時間の戦略的学習が必要。天才である必要はない。正しい方法で、毎日やり続ける「仕組み」を作ることが全て。</p>
-
-    <div class="card-grid">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:var(--accent);">核</div>
-                <h4>コアメッセージ</h4>
-            </div>
-            <p><strong>「努力の量ではなく、努力の質が合否を分ける」</strong></p>
-            <p>3時間の受動的な読み直しより、1時間のアクティブリコール（能動的想起）のほうが記憶定着率は3倍。科学的に正しい勉強法を知っているかどうかで、同じ時間の価値が根本的に変わる。</p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:var(--blue);">3</div>
-                <h4>3つの柱</h4>
-            </div>
-            <ul>
-                <li><strong>科学的勉強法</strong> — 間隔反復、アクティブリコール、インターリービング</li>
-                <li><strong>戦略的科目計画</strong> — 数学と英語を最優先、80/20で高頻出分野に集中</li>
-                <li><strong>脳の最適化</strong> — 睡眠8時間以上、運動、栄養で認知機能を最大化</li>
-            </ul>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:var(--green);">数</div>
-                <h4>重要な数字</h4>
-            </div>
-            <ul>
-                <li>東大二次の合格最低点は<strong>約57-61%</strong>（理三除く）</li>
-                <li>共通テストは1,000点→<strong>110点に圧縮</strong>（全体の20%）</li>
-                <li>二次試験440点が勝負の<strong>80%</strong>を決める（共テは1,000点→110点に圧縮）</li>
-                <li>W杯のゴールの30%がセットプレーなように、<strong>過去問演習</strong>が合格の30%を決める</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="alert alert-danger">
-        <strong>本プランの核心：</strong>「東大は、正しく準備すれば受かる試験だ。」二次試験の合格率は受験者の約30-35%。100人に1人ではなく、3人に1人が受かる。問題は「頭が良いか」ではなく「正しく準備したか」だ。
-    </div>
-</div>
-
-<!-- ===== Gap Analysis ===== -->
-<div id="gap" class="section">
-    <h2 class="section-title">ギャップ分析：偏差値60 → 東大レベル</h2>
-    <p class="section-lead">現在地と目的地の正確な距離を知ることが、戦略の第一歩。</p>
-
-    <table>
-        <thead>
-            <tr><th>偏差値</th><th>位置</th><th>大学レベル</th><th>ステータス</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>60</td><td>上位15.9%</td><td>MARCH（明治・青学・立教・中央・法政）</td><td><span class="tag tag-gold">現在地</span></td></tr>
-            <tr><td>65</td><td>上位6.7%</td><td>早慶下位〜上智</td><td><span class="tag tag-blue">高1終了目標</span></td></tr>
-            <tr><td>68</td><td>上位3.6%</td><td>早慶上位</td><td><span class="tag tag-blue">高2中間目標</span></td></tr>
-            <tr><td>72</td><td>上位1.4%</td><td>東大ボーダー（文二・文三・理二）</td><td><span class="tag tag-green">高3夏目標</span></td></tr>
-            <tr><td>75</td><td>上位0.6%</td><td>東大安全圏（文一・理一）</td><td><span class="tag tag-red">最終目標</span></td></tr>
-        </tbody>
-    </table>
-
-    <h3>なぜ偏差値60からでも可能なのか</h3>
-    <div class="card-grid">
-        <div class="card">
-            <h4>1. 時間的アドバンテージ</h4>
-            <p>高1の4月からスタートすることで、<strong>約35ヶ月</strong>の準備期間がある。高2や高3から決意する受験生より圧倒的に有利。予備校の調査では、偏差値15以上の上昇を達成した受験生の多くが高1スタート組。</p>
-        </div>
-        <div class="card">
-            <h4>2. 偏差値60は「ゼロ」ではない</h4>
-            <p>すでに基礎学力は平均以上。中学レベルの内容は理解できている。この土台の上に、正しい方法で積み上げれば到達可能。ゼロから始める人の倍速で進める。</p>
-        </div>
-        <div class="card">
-            <h4>3. 二次試験は50%で合格</h4>
-            <p>東大二次試験（理三除く）の合格最低点は毎年<strong>約57-61%</strong>（2025年実績：文一61.1%、理一58.4%）。全問正解は不要。6割を確実に取り、残りで部分点を拾う戦略が有効。</p>
-        </div>
-    </div>
-
-    <h3>必要な学習時間の見積もり</h3>
-    <table>
-        <thead>
-            <tr><th>学年</th><th>平日</th><th>休日</th><th>年間合計（概算）</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>高1</td><td>3〜4時間</td><td>5〜6時間</td><td>約1,200時間</td></tr>
-            <tr><td>高2</td><td>4〜5時間</td><td>7〜8時間</td><td>約1,600時間</td></tr>
-            <tr><td>高3</td><td>6〜8時間</td><td>10〜12時間</td><td>約2,200時間</td></tr>
-            <tr><td colspan="3"><strong>合計</strong></td><td><strong>約5,000時間</strong></td></tr>
-        </tbody>
-    </table>
-</div>
-
-<!-- ===== Study Methods ===== -->
+<!-- ===== なるほど1: 科学的勉強法 ===== -->
 <div id="study-methods" class="section">
-    <h2 class="section-title">科学的に正しい勉強法ランキング｜東大合格に必須の学習法</h2>
-    <p class="section-lead">Dunlosky et al.（2013）の大規模レビューを中心に、350以上の研究から導かれたエビデンスベースの勉強法を効果順にランク付け。</p>
-
-    <h3>Tier S: 科学的に最も効果が高い（必ず取り入れるべき）</h3>
+    <h2 class="section-title">なるほど：科学的に最も効果が高い勉強法 Tier S</h2>
+    <p class="section-lead">Dunlosky et al.（2013）が350以上の研究を横断レビューし、全勉強法をランク付け。最高評価の「Tier S」はたった3つ。あなたはいくつ知っていますか？</p>
 
     <div class="card-grid">
         <div class="card" style="border-top:4px solid var(--accent);">
@@ -375,621 +241,146 @@
                 <div class="card-icon" style="background:var(--accent);">S1</div>
                 <h4>アクティブリコール（能動的想起）</h4>
             </div>
-            <p><strong>効果：</strong>受動的再読と比較して記憶定着率が<strong>50-150%向上</strong></p>
-            <p>教科書を読み返すのではなく、「何が書いてあったか」を自分で思い出す。テスト形式で自分に問いかけることで、記憶の検索回路が強化される（テスト効果）。</p>
-            <p><strong>実践法：</strong></p>
-            <ul>
-                <li>教科書を1ページ読んだら閉じて、内容を白紙に書き出す</li>
-                <li>暗記カード（Anki等）で自分に質問を出す</li>
-                <li>授業ノートを見ずに、その日の授業内容を再現してみる</li>
-            </ul>
+            <p><strong>効果：記憶定着率が50-150%向上</strong></p>
+            <p>教科書を読み返すのではなく、閉じて「何が書いてあったか」を自分の頭から引っ張り出す。この「思い出す」行為そのものが、記憶の検索回路を強化する。</p>
+            <p style="color:var(--accent);font-weight:600;font-size:12px;">3時間の再読 ＜ 1時間のリコール。効率は文字通り3倍。</p>
         </div>
         <div class="card" style="border-top:4px solid var(--accent);">
             <div class="card-header">
                 <div class="card-icon" style="background:var(--accent);">S2</div>
                 <h4>間隔反復（スペースド・リピティション）</h4>
             </div>
-            <p><strong>効果：</strong>一夜漬けと比較して長期記憶定着率が<strong>200%以上向上</strong></p>
-            <p>エビングハウスの忘却曲線に基づき、忘れかけたタイミングで復習することで記憶を最大限に定着させる。</p>
-            <p><strong>最適な復習間隔：</strong></p>
-            <ul>
-                <li>1回目の復習：<strong>1日後</strong></li>
-                <li>2回目の復習：<strong>3日後</strong></li>
-                <li>3回目の復習：<strong>7日後</strong></li>
-                <li>4回目の復習：<strong>21日後</strong></li>
-                <li>5回目の復習：<strong>60日後</strong></li>
-            </ul>
-            <p><strong>ツール：</strong>Anki（無料アプリ）が最強。自動で最適な間隔を計算してくれる。</p>
+            <p><strong>効果：長期記憶定着率が200%以上向上</strong></p>
+            <p>エビングハウスの忘却曲線に基づき、「忘れかけたタイミング」で復習する。一夜漬けの200倍の効率で長期記憶に刻み込まれる。</p>
+            <p style="color:var(--accent);font-weight:600;font-size:12px;">最適な復習間隔は「1日後→3日後→7日後→21日後→60日後」。</p>
         </div>
         <div class="card" style="border-top:4px solid var(--accent);">
             <div class="card-header">
                 <div class="card-icon" style="background:var(--accent);">S3</div>
                 <h4>インターリービング（交互学習）</h4>
             </div>
-            <p><strong>効果：</strong>ブロック学習（同じ分野を集中）と比較して<strong>25-76%の成績向上</strong></p>
-            <p>同じ種類の問題を連続で解くのではなく、異なる種類の問題を混ぜて練習する。「この問題にはどの解法を使うか」を自分で判断する力が鍛えられる。</p>
-            <p><strong>実践法：</strong></p>
-            <ul>
-                <li>数学：確率→微分→ベクトル→確率…と混ぜて演習</li>
-                <li>英語：文法→読解→作文→リスニングをローテーション</li>
-                <li>本番の試験は「インターリーブ」そのもの。練習から慣れておく</li>
-            </ul>
+            <p><strong>効果：25-76%の成績向上</strong></p>
+            <p>同じ種類の問題を連続で解くのではなく、異なる分野を混ぜて練習する。「どの解法を使うか」を自分で判断する力が鍛えられる。本番の試験そのものの練習になる。</p>
+            <p style="color:var(--accent);font-weight:600;font-size:12px;">数学なら：確率→微分→ベクトル→確率...とシャッフル。</p>
         </div>
     </div>
 
-    <h3>Tier A: 高い効果（積極的に活用すべき）</h3>
+    <h3>効果が低い勉強法は今すぐやめよう</h3>
+    <div class="effectiveness-bar"><span class="label">アクティブリコール</span><div class="bar"><div class="bar-fill" style="width:95%;background:var(--accent);">Tier S</div></div></div>
+    <div class="effectiveness-bar"><span class="label">間隔反復</span><div class="bar"><div class="bar-fill" style="width:95%;background:var(--accent);">Tier S</div></div></div>
+    <div class="effectiveness-bar"><span class="label">インターリービング</span><div class="bar"><div class="bar-fill" style="width:85%;background:var(--accent);">Tier S</div></div></div>
+    <div class="effectiveness-bar"><span class="label">精緻化質問法</span><div class="bar"><div class="bar-fill" style="width:80%;background:var(--gold);">Tier A</div></div></div>
+    <div class="effectiveness-bar"><span class="label">フェインマン法</span><div class="bar"><div class="bar-fill" style="width:78%;background:var(--gold);">Tier A</div></div></div>
+    <div class="effectiveness-bar"><span class="label">蛍光ペン</span><div class="bar"><div class="bar-fill" style="width:15%;background:#999;">Tier F</div></div></div>
+    <div class="effectiveness-bar"><span class="label">教科書の再読</span><div class="bar"><div class="bar-fill" style="width:12%;background:#999;">Tier F</div></div></div>
 
-    <div class="card-grid">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:var(--blue);">A1</div>
-                <h4>精緻化質問法</h4>
-            </div>
-            <p>学んだ内容に対して「なぜ？」「どうして？」を繰り返し問う。理解の深さが記憶の強さに直結する。</p>
-            <p><strong>例：</strong>「フランス革命が起きた」→「なぜこのタイミングで？」→「財政破綻と啓蒙思想の普及が重なったから」</p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:var(--blue);">A2</div>
-                <h4>フェインマン・テクニック</h4>
-            </div>
-            <p>学んだことを<strong>小学生でもわかるように</strong>説明する。説明に詰まった箇所が「理解できていない部分」。ノーベル賞物理学者フェインマン考案。</p>
-            <p><strong>手順：</strong>①概念を選ぶ → ②白紙に平易な言葉で説明を書く → ③詰まったら教科書に戻る → ④さらにシンプルに書き直す</p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:var(--blue);">A3</div>
-                <h4>教えることで学ぶ（プロテジェ効果）</h4>
-            </div>
-            <p>他人に教えると記憶定着率は<strong>約90%</strong>に達する（学習ピラミッド）。教えるために「整理し直す」プロセスが理解を深める。</p>
-            <p><strong>実践法：</strong>友人に教える、家族に今日学んだことを説明する、ぬいぐるみに講義する（ラバーダック法）</p>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-icon" style="background:var(--blue);">A4</div>
-                <h4>デュアルコーディング（二重符号化）</h4>
-            </div>
-            <p>言語情報と視覚情報を組み合わせて学習する。図解、マインドマップ、フローチャートを活用。脳の2つの異なる経路で記憶するため、想起の手がかりが倍増する。</p>
-        </div>
-    </div>
-
-    <h3>Tier F: 効果が低い（今すぐやめるべき勉強法）</h3>
-
-    <div class="alert alert-danger">
-        <strong>科学的に効果が低いと証明された勉強法：</strong>
-        <ul style="margin-top:8px;">
-            <li><strong>蛍光ペンでハイライト</strong> — 「マーカーを引いた=覚えた」という錯覚を生むだけ。記憶定着への効果はほぼゼロ</li>
-            <li><strong>教科書の再読</strong> — 2回目以降の読み返しは労力の割にほとんど記憶に残らない。「わかった気」になる危険</li>
-            <li><strong>ノートの書き写し（丸写し）</strong> — 手を動かしているだけで脳は働いていない。要約・再構成しないと意味がない</li>
-            <li><strong>一夜漬け（集中学習）</strong> — 短期テストでは有効だが、1週間後にはほぼ忘れる。間隔反復の200分の1の効率</li>
-        </ul>
-    </div>
-
-    <h3>勉強法の効果比較</h3>
-    <div class="effectiveness-bar"><span class="label">アクティブリコール</span><div class="bar"><div class="bar-fill" style="width:95%;background:var(--accent);">★★★★★</div></div></div>
-    <div class="effectiveness-bar"><span class="label">間隔反復</span><div class="bar"><div class="bar-fill" style="width:95%;background:var(--accent);">★★★★★</div></div></div>
-    <div class="effectiveness-bar"><span class="label">インターリービング</span><div class="bar"><div class="bar-fill" style="width:85%;background:var(--accent);">★★★★☆</div></div></div>
-    <div class="effectiveness-bar"><span class="label">精緻化質問法</span><div class="bar"><div class="bar-fill" style="width:80%;background:var(--gold);">★★★★</div></div></div>
-    <div class="effectiveness-bar"><span class="label">フェインマン法</span><div class="bar"><div class="bar-fill" style="width:80%;background:var(--gold);">★★★★</div></div></div>
-    <div class="effectiveness-bar"><span class="label">他人に教える</span><div class="bar"><div class="bar-fill" style="width:78%;background:var(--gold);">★★★★</div></div></div>
-    <div class="effectiveness-bar"><span class="label">マインドマップ</span><div class="bar"><div class="bar-fill" style="width:55%;background:var(--blue);">★★★</div></div></div>
-    <div class="effectiveness-bar"><span class="label">ノート要約</span><div class="bar"><div class="bar-fill" style="width:45%;background:var(--blue);">★★☆</div></div></div>
-    <div class="effectiveness-bar"><span class="label">蛍光ペン</span><div class="bar"><div class="bar-fill" style="width:15%;background:#999;">★</div></div></div>
-    <div class="effectiveness-bar"><span class="label">教科書の再読</span><div class="bar"><div class="bar-fill" style="width:12%;background:#999;">★</div></div></div>
-</div>
-
-<!-- ===== Memory Science ===== -->
-<div id="memory" class="section">
-    <h2 class="section-title">記憶の科学｜エビングハウス忘却曲線と間隔反復の活用法</h2>
-    <p class="section-lead">脳がどのように記憶を形成・保存・想起するかを理解することで、学習効率を劇的に向上させる。</p>
-
-    <h3>記憶の3段階</h3>
-    <div class="phase-grid">
-        <div class="phase-item">
-            <div class="phase-number">1</div>
-            <h4>符号化（Encoding）</h4>
-            <p>情報を脳に入力する段階。深い処理（意味を考える、関連付ける）ほど強く符号化される。浅い処理（見る、マーカーを引く）は弱い。</p>
-        </div>
-        <div class="phase-item">
-            <div class="phase-number">2</div>
-            <h4>固定化（Consolidation）</h4>
-            <p>海馬から大脳皮質へ記憶が転送される段階。<strong>睡眠中</strong>に最も活発に行われる。徹夜学習が無意味な理由がこれ。</p>
-        </div>
-        <div class="phase-item">
-            <div class="phase-number">3</div>
-            <h4>想起（Retrieval）</h4>
-            <p>記憶を引き出す段階。想起するたびに記憶は<strong>強化</strong>される（テスト効果）。だからアクティブリコールが最強。</p>
-        </div>
-    </div>
-
-    <h3>記憶術テクニック</h3>
-    <div class="card-grid">
-        <div class="card">
-            <h4>チャンキング（塊化）</h4>
-            <p>ワーキングメモリの容量は<strong>7±2個</strong>（ミラーの法則）。情報を意味のある塊にまとめることで、記憶容量を実質的に拡張できる。</p>
-            <p><strong>例：</strong>電話番号 09012345678 → 090-1234-5678（11桁→3塊）</p>
-        </div>
-        <div class="card">
-            <h4>記憶の宮殿（場所法）</h4>
-            <p>記憶チャンピオンの90%が使用する最古・最強の記憶術。慣れた場所（自宅等）を頭の中で歩きながら、覚えたい情報を各場所に「配置」する。空間記憶は人間の脳が最も得意とする記憶形式。</p>
-        </div>
-        <div class="card">
-            <h4>睡眠と記憶</h4>
-            <p>睡眠の前半（NREM徐波睡眠）で事実の記憶が固定化、後半（REM睡眠）で手続き記憶と創造的問題解決が強化。<strong>寝る前30分の復習</strong>は記憶定着率を20-30%向上させる。</p>
-        </div>
-        <div class="card">
-            <h4>運動と記憶</h4>
-            <p>有酸素運動はBDNF（脳由来神経栄養因子）を<strong>20-30%</strong>増加させ、海馬の神経新生を促進する。勉強前の20分のジョギングでテスト成績が5-10%向上（Hillman et al., 2009）。</p>
-        </div>
+    <div class="alert alert-warning" style="margin-top:20px;">
+        <strong>ここまで読んで「じゃあ具体的にどうやるの？」と思ったあなたへ。</strong><br>
+        Ankiの最適設定、白紙再現法の手順、科目別のインターリービング設計...実践の全ステップは完全版で詳しく解説しています。
     </div>
 </div>
 
-<!-- ===== Concentration ===== -->
-<div id="concentration" class="section">
-    <h2 class="section-title">集中力の科学</h2>
-    <p class="section-lead">集中力は「才能」ではなく「技術」。科学的に管理・強化できる。</p>
-
-    <h3>集中力を支配する3つの法則</h3>
-    <ul class="principle-list">
-        <li>
-            <strong>法則1: ウルトラディアンリズム（90分周期）</strong>
-            人間の脳は約90分の集中と15-20分の休息を交互に繰り返すリズムを持つ。90分を超えた集中は効率が急激に低下する。<strong>ポモドーロ・テクニック（25分集中+5分休憩）</strong>はこのリズムの中で最も実践的な単位。4ポモドーロ（約2時間）で長い休憩を取る。
-        </li>
-        <li>
-            <strong>法則2: ディープワーク（Cal Newport）</strong>
-            認知的に負荷の高いタスク（数学の証明、英作文等）には「注意の残留」が邪魔になる。メール、SNS、通知を完全に遮断した<strong>深い集中状態</strong>でしか到達できない思考レベルがある。スマホは別の部屋に置く（テキサス大学の研究：机の上にスマホがあるだけで認知能力が約10%低下）。
-        </li>
-        <li>
-            <strong>法則3: フロー状態（チクセントミハイ）</strong>
-            課題の難易度と自分のスキルが釣り合った時に入る「没入状態」。フローに入ると時間感覚が消え、パフォーマンスが最大化する。<strong>少し難しいが不可能ではない問題</strong>に取り組むことでフローに入りやすくなる。簡単すぎると退屈、難しすぎると不安になる。
-        </li>
-    </ul>
-
-    <h3>集中力を破壊するもの</h3>
-    <table>
-        <thead><tr><th>要因</th><th>集中力への影響</th><th>対策</th></tr></thead>
-        <tbody>
-            <tr><td>スマートフォン通知</td><td>1回の通知で集中力回復に<strong>23分</strong>かかる</td><td>勉強中は機内モード。別の部屋に置く</td></tr>
-            <tr><td>SNS</td><td>注意の断片化。マルチタスクで効率<strong>40%低下</strong></td><td>アプリにタイマーを設定。勉強時間帯はブロック</td></tr>
-            <tr><td>睡眠不足</td><td>6時間睡眠が2週間続くと<strong>48時間徹夜と同等の認知低下</strong></td><td>8時間以上の睡眠を死守</td></tr>
-            <tr><td>脱水</td><td>1-2%の脱水で注意力・ワーキングメモリが<strong>有意に低下</strong></td><td>水を常に手元に。1日2L以上</td></tr>
-            <tr><td>歌詞付き音楽</td><td>読解・暗記系タスクの効率を<strong>明確に低下</strong></td><td>無音 or 環境音 or 歌詞なしBGM</td></tr>
-        </tbody>
-    </table>
-</div>
-
-<!-- ===== Motivation ===== -->
-<div id="motivation" class="section">
-    <h2 class="section-title">モチベーション理論</h2>
-    <p class="section-lead">3年間の受験勉強で最大の敵は「やる気の消失」。モチベーションは感情ではなくシステムで管理する。</p>
+<!-- ===== なるほど2: 睡眠の科学 ===== -->
+<div id="sleep" class="section">
+    <h2 class="section-title">衝撃：「睡眠8時間」が最強の勉強法である</h2>
+    <p class="section-lead">「頑張って夜中まで勉強する」は、科学的に見ると最も愚かな戦略。睡眠こそが記憶を脳に刻み込む最後のプロセスだから。</p>
 
     <div class="card-grid">
-        <div class="card" style="border-top:4px solid var(--accent);">
-            <h4>自己決定理論（Deci & Ryan）</h4>
-            <p>人間の内発的動機づけは3つの欲求が満たされた時に最大化される：</p>
-            <ul>
-                <li><strong>自律性</strong> — 「やらされている」ではなく「自分で選んだ」感覚。勉強内容・順序・場所を自分で決める</li>
-                <li><strong>有能感</strong> — 「できるようになっている」実感。小さな成功体験を積み重ねる。模試の偏差値推移を可視化</li>
-                <li><strong>関係性</strong> — 仲間や指導者との繋がり。勉強仲間1-2人を見つける</li>
-            </ul>
+        <div class="card" style="border-top:4px solid var(--blue);">
+            <div class="card-header">
+                <div class="card-icon" style="background:var(--blue);">脳</div>
+                <h4>6時間睡眠 x 2週間 = 48時間徹夜</h4>
+            </div>
+            <p>Matthew Walker研究室のデータによると、6時間睡眠が2週間続くと認知機能は<strong>48時間（丸2日）完全徹夜した人と同等</strong>まで低下する。</p>
+            <p>恐ろしいのは、本人は「自分は大丈夫」と感じていること。睡眠不足は自覚できない。つまり「寝なくても平気」と思っている人ほど、脳は壊れている。</p>
         </div>
         <div class="card" style="border-top:4px solid var(--blue);">
-            <h4>習慣の科学（Atomic Habits）</h4>
-            <p>モチベーションに頼らない。<strong>習慣</strong>にしてしまえば、やる気がなくても体が動く。</p>
-            <ul>
-                <li><strong>きっかけ</strong> — 「学校から帰ったら」「夕食後に」など行動のトリガーを決める</li>
-                <li><strong>2分ルール</strong> — 「まず2分だけやる」ことで始動の抵抗を消す</li>
-                <li><strong>環境デザイン</strong> — 机の上に明日最初にやる参考書を開いた状態で置いておく</li>
-                <li><strong>習慣の連鎖</strong> — 既存の習慣に新しい習慣を接続する（歯磨き→英単語5分）</li>
-                <li><strong>アイデンティティ</strong> — 「勉強する人」ではなく「東大生になる人間」として行動する</li>
-            </ul>
+            <div class="card-header">
+                <div class="card-icon" style="background:var(--blue);">記</div>
+                <h4>寝ている間に記憶が固定される</h4>
+            </div>
+            <p>睡眠中、脳は海馬に一時保存された情報を大脳皮質に転送する（記憶の固定化）。この転送が行われなければ、どれだけ勉強しても長期記憶にならない。</p>
+            <p><strong>寝る前30分の復習で記憶定着率が20-30%向上</strong>するのも、このメカニズムによるもの。</p>
         </div>
-        <div class="card" style="border-top:4px solid var(--green);">
-            <h4>GRIT（やり抜く力）</h4>
-            <p>Angela Duckworthの研究：IQよりも<strong>GRIT（情熱×粘り強さ）</strong>のほうが長期的な成功を予測する。</p>
-            <ul>
-                <li>才能は「スキルを獲得する速度」を決める</li>
-                <li>努力は「スキル獲得」と「スキルの活用」の<strong>2回</strong>掛けられる</li>
-                <li><strong>才能×努力=スキル、スキル×努力=成果</strong></li>
-                <li>つまり努力はIQの2乗で効く</li>
-            </ul>
+        <div class="card" style="border-top:4px solid var(--blue);">
+            <div class="card-header">
+                <div class="card-icon" style="background:var(--blue);">N</div>
+                <h4>NASAナップの威力</h4>
+            </div>
+            <p>NASAが宇宙飛行士のパフォーマンス研究で発見した、認知機能を劇的に回復させる仮眠法。受験勉強の午後の集中力維持に驚くほど効く。</p>
+            <p style="color:var(--blue);font-weight:600;font-size:12px;">具体的なタイミングと長さ、やり方は完全版で。</p>
         </div>
     </div>
 
-    <h3>先延ばし（プロクラスティネーション）の科学的攻略</h3>
-    <div class="comparison-grid">
-        <div class="comparison-box">
-            <div class="cb-header" style="background:var(--accent);">なぜ先延ばしするのか</div>
-            <div class="cb-body">
-                <ul>
-                    <li><strong>時間割引</strong> — 脳は「今の楽しさ」を「未来の報酬」より過大評価する</li>
-                    <li><strong>完璧主義</strong> — 「完璧にできないなら始めたくない」</li>
-                    <li><strong>タスクの曖昧さ</strong> — 「何をすればいいかわからない」</li>
-                    <li><strong>不快感の回避</strong> — 難しい科目から逃げる（扁桃体の防衛反応）</li>
-                </ul>
-            </div>
-        </div>
-        <div class="comparison-box">
-            <div class="cb-header" style="background:var(--green);">科学的な対策</div>
-            <div class="cb-body">
-                <ul>
-                    <li><strong>2分ルール</strong> — 「まず2分だけ」で始動の摩擦を消す。脳は一度始めると継続しやすい</li>
-                    <li><strong>実行意図</strong> — 「いつ・どこで・何を」を事前に決める（"If-Then"計画）</li>
-                    <li><strong>誘惑バンドル</strong> — 好きなこと（音楽等）と勉強をセットにする</li>
-                    <li><strong>タスクの分解</strong> — 「数学を勉強する」→「青チャートp.52の例題3を解く」に具体化</li>
-                </ul>
-            </div>
-        </div>
+    <div class="alert alert-info" style="margin-top:20px;">
+        <strong>「じゃあ、最適な1日のスケジュールは？」</strong><br>
+        起床時間、勉強ブロックの配置、運動のタイミング、就寝前ルーティン...脳科学に基づいた「最強の日課」は完全版で公開しています。
     </div>
 </div>
 
-<!-- ===== Year 1 ===== -->
-<div id="year1" class="section">
-    <h2 class="section-title">高1の勉強計画：基盤構築の年 —「エンジンを作る」</h2>
-    <p class="section-lead">数学と英語の基礎を固めることに全精力の70%を注ぐ。この2科目は後から取り返すのが最も困難。</p>
+<!-- ===== 完全版の内容 ===== -->
+<div id="full-contents" class="section" style="background:#fff;">
+    <h2 class="section-title">完全版で読める内容</h2>
+    <p class="section-lead">この無料ページでは「なぜ」だけをお伝えしました。完全版では「何を」「いつ」「どうやるか」を全て公開しています。</p>
 
-    <div class="timeline">
-        <div class="timeline-item">
-            <h4>4月-6月：診断と基礎固め</h4>
-            <p><strong>数学：</strong>中学範囲の総復習 → 数学IA教科書を丁寧に理解。「なぜこの公式が成り立つのか」を導出できるレベルまで。</p>
-            <p><strong>英語：</strong>システム英単語 or ターゲット1900開始。Evergreen/Forestで文法体系を把握。毎日英単語30語ペース。</p>
-            <p><strong>古文：</strong>助動詞の活用表を完全暗記。ゴロゴ or 古文単語315開始。</p>
-            <p><strong>日課：</strong>数学1.5h + 英語1h + 古文0.5h = 3h/日</p>
-        </div>
-        <div class="timeline-item">
-            <h4>7月-8月：夏の第一次攻勢</h4>
-            <p><strong>数学：</strong>青チャートIA 例題+練習Aを全問。1日10問ペース。</p>
-            <p><strong>英語：</strong>語彙1,500語到達。基礎英文問題精講開始。毎日15分英文読書。</p>
-            <p><strong>古文/漢文：</strong>助動詞マスター。漢文ヤマのヤマで基本句法。</p>
-            <p><strong>勉強時間：</strong>5-6h/日 | <strong>模試目標：</strong>偏差値62-63</p>
-        </div>
-        <div class="timeline-item">
-            <h4>9月-12月：加速フェーズ</h4>
-            <p><strong>数学：</strong>青チャートIA継続 + 数学IIB教科書開始。</p>
-            <p><strong>英語：</strong>語彙2,500語。英作文の基礎（簡単な日記を英語で書く）。</p>
-            <p><strong>理科/社会：</strong>選択科目の教科書を「読み物」として通読（暗記不要、流れを理解）。</p>
-        </div>
-        <div class="timeline-item">
-            <h4>1月-3月：高1総決算</h4>
-            <p><strong>数学：</strong>青チャートIA完了 → 青チャートIIB開始。</p>
-            <p><strong>英語：</strong>語彙3,000語。文法問題集完了。</p>
-            <p><strong>模試：</strong>河合 or 駿台模試 → <strong>目標：偏差値63-65</strong></p>
-        </div>
-    </div>
-
-    <h3>高1で使う参考書</h3>
-    <table>
-        <thead><tr><th>科目</th><th>教材</th><th>目的</th></tr></thead>
-        <tbody>
-            <tr><td><span class="tag tag-red">数学</span></td><td>青チャート IA・IIB</td><td>全基本パターンの習得</td></tr>
-            <tr><td><span class="tag tag-blue">英語</span></td><td>システム英単語 / ターゲット1900</td><td>語彙の基盤</td></tr>
-            <tr><td><span class="tag tag-blue">英語</span></td><td>Vintage / Next Stage</td><td>文法体系の完成</td></tr>
-            <tr><td><span class="tag tag-blue">英語</span></td><td>基礎英文問題精講</td><td>基礎読解力</td></tr>
-            <tr><td><span class="tag tag-green">古文</span></td><td>古文単語315 / ゴロゴ</td><td>古典語彙</td></tr>
-            <tr><td><span class="tag tag-green">古文</span></td><td>ステップアップノート30</td><td>文法ドリル</td></tr>
-            <tr><td><span class="tag tag-gold">漢文</span></td><td>漢文ヤマのヤマ</td><td>基本句法</td></tr>
-        </tbody>
-    </table>
-</div>
-
-<!-- ===== Year 2 ===== -->
-<div id="year2" class="section">
-    <h2 class="section-title">高2の勉強計画：実力養成の年 —「スピードを上げる」</h2>
-    <p class="section-lead">「理解する」から「使いこなす」へ。東大レベルの問題に触れ始める。夏休みが3年間で最も重要な学習期間。</p>
-
-    <div class="alert alert-warning">
-        <strong>最重要：高2の夏休みが合否を分ける。</strong>ここで8-10h/日の学習をやり切った受験生と、遊んだ受験生の差は二度と埋まらない。青チャート全完了、語彙5,000語、理科/社会の教科書通読完了がこの夏のゴール。
-    </div>
-
-    <div class="timeline">
-        <div class="timeline-item">
-            <h4>4月-6月：深化</h4>
-            <p><strong>数学：</strong>青チャートIIB継続。理系は数学III開始。1対1対応IA着手。</p>
-            <p><strong>英語：</strong>語彙4,000語。ポレポレ英文読解 or 英文読解の透視図。和文英訳練習開始。</p>
-            <p><strong>理科/社会：</strong>本格的な教科書学習開始。物理のエッセンス / 世界史B教科書。</p>
-        </div>
-        <div class="timeline-item" style="border-left:3px solid var(--accent);">
-            <h4>7月-8月：決定的な夏【最重要】</h4>
-            <p><strong>数学：</strong>青チャートIIB（+III）完了。1対1対応IIB開始。</p>
-            <p><strong>英語：</strong>語彙5,000語。ポレポレ完了。東大過去問を「読む」（解かなくてよい、レベル感を知る）。</p>
-            <p><strong>理科/社会：</strong>全カリキュラムの1周目完了。</p>
-            <p><strong>勉強時間：</strong>8-10h/日 | <strong>東大模試を初受験</strong>（点数不問、経験が目的）</p>
-        </div>
-        <div class="timeline-item">
-            <h4>9月-3月：東大レベルへの挑戦</h4>
-            <p><strong>数学：</strong>1対1対応全巻。東大過去問に着手（1990年代の易しい年度から）。</p>
-            <p><strong>英語：</strong>東大過去問演習（月1-2年分）。英作文トレーニング（Z会）。</p>
-            <p><strong>模試：</strong>河合/駿台模試 → <strong>目標：偏差値68-70</strong></p>
-            <p><strong>東大模試：</strong>C-D判定が出れば順調（この段階でB以上は稀）</p>
-        </div>
-    </div>
-</div>
-
-<!-- ===== Year 3 ===== -->
-<div id="year3" class="section">
-    <h2 class="section-title">高3の勉強計画：実戦突破の年 —「勝負に勝つ」</h2>
-    <p class="section-lead">新しい学習は8月で終了。9月以降はひたすら過去問演習と弱点修復。ピーキングを2月に合わせる。</p>
-
-    <div class="phase-grid">
-        <div class="phase-item">
-            <div class="phase-number">春</div>
-            <h4>4月-7月</h4>
-            <p>最後の新規学習。プラチカ/やさ理/新スタ演で東大レベル演習。全科目カリキュラム完了。</p>
-        </div>
-        <div class="phase-item">
-            <div class="phase-number">夏</div>
-            <h4>8月</h4>
-            <p>10-12h/日。過去問没入。5-10年分を全科目で実施。8月の東大模試でB判定が目標。</p>
-        </div>
-        <div class="phase-item">
-            <div class="phase-number">秋冬</div>
-            <h4>9月-2月</h4>
-            <p>過去問+弱点修復。11月から共通テスト対策に40-70%シフト。1月共テ後は二次に全集中。</p>
-        </div>
-    </div>
-
-    <h3>高3の月別・共テ/二次の配分</h3>
-    <table>
-        <thead><tr><th>月</th><th>二次試験</th><th>共通テスト</th><th>主な活動</th></tr></thead>
-        <tbody>
-            <tr><td>4-8月</td><td>90%</td><td>10%</td><td>過去問演習、弱点科目の最終補強</td></tr>
-            <tr><td>9-10月</td><td>80%</td><td>20%</td><td>秋の東大模試でA/B判定を目指す</td></tr>
-            <tr><td>11月</td><td>60%</td><td>40%</td><td>共テ対策開始。理科/社会の共テ特有の形式対策</td></tr>
-            <tr><td>12月</td><td>30%</td><td>70%</td><td>共テ予想問題パック5-10セット。時間管理の練習</td></tr>
-            <tr><td>1月前半</td><td>10%</td><td>90%</td><td>共テ最終調整。本番：<strong>860+/1,000</strong>（86%以上）</td></tr>
-            <tr><td>1月後半-2月</td><td>100%</td><td>0%</td><td>二次に全集中。未実施の過去問+再演習。<strong>目標260+/440（59%以上）</strong></td></tr>
-        </tbody>
-    </table>
-</div>
-
-<!-- ===== Subjects ===== -->
-<div id="subjects" class="section">
-    <h2 class="section-title">東大二次試験の科目別攻略法・参考書ルート</h2>
-    <p class="section-lead">東大の各科目が「何を」「どのレベルで」求めているかを理解し、最適な学習パスを設計する。</p>
-
-    <h3>東大二次試験の配点構造</h3>
-    <div class="comparison-grid">
-        <div class="comparison-box">
-            <div class="cb-header" style="background:var(--secondary);">文科（文一・文二・文三）</div>
-            <div class="cb-body">
-                <ul>
-                    <li><strong>国語 120点</strong>（150分）— 現代文+古文+漢文</li>
-                    <li><strong>数学 80点</strong>（100分）— 文系数学4問</li>
-                    <li><strong>英語 120点</strong>（120分）— 読解+作文+和訳+要約+リスニング</li>
-                    <li><strong>地歴 120点</strong>（150分）— 2科目選択（世史/日史/地理）</li>
-                    <li>合計 440点 + 共テ圧縮110点 = <strong>550点満点</strong></li>
-                </ul>
-            </div>
-        </div>
-        <div class="comparison-box">
-            <div class="cb-header" style="background:var(--accent);">理科（理一・理二・理三）</div>
-            <div class="cb-body">
-                <ul>
-                    <li><strong>数学 120点</strong>（150分）— 理系数学6問</li>
-                    <li><strong>英語 120点</strong>（120分）— 読解+作文+和訳+要約+リスニング</li>
-                    <li><strong>国語 80点</strong>（100分）— 現代文+古文</li>
-                    <li><strong>理科 120点</strong>（150分）— 2科目（物理/化学/生物/地学）</li>
-                    <li>合計 440点 + 共テ圧縮110点 = <strong>550点満点</strong></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <h3>数学 — 最も差がつく科目</h3>
-    <div class="alert alert-info">
-        <strong>参考書ルート：</strong>教科書理解 → 青チャート（例題+練習）→ 1対1対応の演習 → プラチカ/やさしい理系数学 → 新数学演習（上位者のみ）→ 東大過去問25ヶ年
-    </div>
-    <p><strong>東大数学の鉄則：</strong></p>
-    <ul class="principle-list">
-        <li><strong>公式は導出できるレベルまで理解する。</strong>東大は「なぜその公式が成り立つか」を問う。丸暗記は通用しない。</li>
-        <li><strong>「3回チャレンジルール」</strong> — ①15-20分考える → ②ヒントだけ見て再挑戦10分 → ③解答を読み、閉じてから自力で再現。</li>
-        <li><strong>頻出分野：</strong>数列、積分・面積、確率、ベクトル、整数問題、複素数平面（理系）</li>
-        <li><strong>部分点を必ず取る。</strong>東大は記述式。途中経過を丁寧に書けば、最終答が出なくても点が入る。白紙は最悪手。</li>
+    <ul class="toc-list">
+        <li>
+            <span class="toc-num">1</span>
+            <div><strong>3年間の月別ロードマップ</strong><br><span style="font-size:12px;color:#888;">高1の4月から共通テスト本番まで。偏差値60→65→68→72→75の段階別マイルストーンと、月ごとの優先科目・到達目標。</span></div>
+        </li>
+        <li>
+            <span class="toc-num">2</span>
+            <div><strong>科目別・参考書ルート</strong><br><span style="font-size:12px;color:#888;">数学（青チャート→1対1→...）、英語（DUO→...）、国語、理科、社会。各科目で「この順番で、この参考書を、こう使う」を完全指定。</span></div>
+        </li>
+        <li>
+            <span class="toc-num">3</span>
+            <div><strong>科学的勉強法の実践マニュアル</strong><br><span style="font-size:12px;color:#888;">アクティブリコール・間隔反復・インターリービングの「やり方」を科目別に完全解説。Ankiの設定方法、白紙再現法の手順まで。</span></div>
+        </li>
+        <li>
+            <span class="toc-num">4</span>
+            <div><strong>脳科学に基づく最強の日課スケジュール</strong><br><span style="font-size:12px;color:#888;">起床→朝の復習→学校→部活→深い学習ブロック→就寝前ルーティン。NASAナップの具体的な方法も。</span></div>
+        </li>
+        <li>
+            <span class="toc-num">5</span>
+            <div><strong>部活との両立法</strong><br><span style="font-size:12px;color:#888;">東大合格者の7割が部活経験者。運動がBDNF（脳由来神経栄養因子）を増やし学習効率を上げる科学的根拠と、限られた時間での学習設計。</span></div>
+        </li>
+        <li>
+            <span class="toc-num">6</span>
+            <div><strong>モチベーション理論と先延ばし対策</strong><br><span style="font-size:12px;color:#888;">自己決定理論、時間的動機づけ理論、実装意図、テンプテーション・バンドリング...心理学の知見を受験に応用。</span></div>
+        </li>
+        <li>
+            <span class="toc-num">7</span>
+            <div><strong>記憶の科学と集中力の最大化</strong><br><span style="font-size:12px;color:#888;">エビングハウス忘却曲線の活用、ポモドーロ・テクニック、フロー状態の作り方、スマホ依存の断ち方。</span></div>
+        </li>
+        <li>
+            <span class="toc-num">8</span>
+            <div><strong>試験当日の不安対策</strong><br><span style="font-size:12px;color:#888;">筆記開示（エクスプレッシブ・ライティング）、4-7-8呼吸法、認知的再評価...科学的に効果が証明されたメンタル戦略。</span></div>
+        </li>
     </ul>
 
-    <h3>英語 — 安定した得点源にできる</h3>
-    <table>
-        <thead><tr><th>時期</th><th>語彙目標</th><th>教材</th></tr></thead>
-        <tbody>
-            <tr><td>高1終了</td><td>3,000語</td><td>システム英単語Basic → システム英単語</td></tr>
-            <tr><td>高2終了</td><td>5,500語</td><td>上記 + 速読英単語上級編</td></tr>
-            <tr><td>高3終了</td><td>7,000語+</td><td>上記 + 東大過去問の語彙</td></tr>
-        </tbody>
-    </table>
-    <p><strong>東大英語の特徴：</strong>和文英訳、英文和訳、要約、パラグラフライティングという「書く力」が問われる。毎日3-5文でいいから英文を書く習慣を高1から始める。</p>
-
-    <h3>国語 — 古文漢文は「コスパ最強」</h3>
-    <p>古文文法と漢文句法は<strong>有限の暗記量</strong>で確実に得点できる。現代文は対策が難しいが、古文漢文は「やれば取れる」コスパの良い分野。助動詞28種の活用を高1で完璧にすることが最優先。</p>
-
-    <h3>理科/社会 — 二次と共テの両面作戦</h3>
-    <p>高2夏までにカリキュラムを1周し、高2秋から過去問演習に入れる状態を作る。共テ特有の出題形式（資料読み取り、実験考察等）は高3の11月から集中対策する。</p>
-</div>
-
-<!-- ===== Brain Optimization ===== -->
-<div id="brain" class="section">
-    <h2 class="section-title">脳力最大化の科学｜睡眠8時間・運動・栄養の脳科学</h2>
-    <p class="section-lead">勉強法がソフトウェアなら、睡眠・運動・栄養はハードウェア。ハードが壊れていたらどんなソフトも動かない。</p>
-
-    <h3>TOP 10: 科学的根拠に基づく脳力向上アクション</h3>
-    <table>
-        <thead><tr><th>順位</th><th>アクション</th><th>期待効果</th><th>根拠の強さ</th></tr></thead>
-        <tbody>
-            <tr><td>1</td><td><strong>毎日8-10時間の睡眠</strong></td><td>認知機能低下を25-40%防止</td><td><span class="tag tag-red">最強</span></td></tr>
-            <tr><td>2</td><td><strong>週4-5回の有酸素運動（20-30分）</strong></td><td>テスト成績5-15%向上、BDNF増加</td><td><span class="tag tag-red">最強</span></td></tr>
-            <tr><td>3</td><td><strong>寝る前30分の復習</strong></td><td>記憶定着率20-30%向上</td><td><span class="tag tag-red">最強</span></td></tr>
-            <tr><td>4</td><td><strong>バランスの良い食事（オメガ3、ベリー類）</strong></td><td>基礎認知機能の維持・向上</td><td><span class="tag tag-gold">強い</span></td></tr>
-            <tr><td>5</td><td><strong>ストレス管理（呼吸法、運動、筆記開示）</strong></td><td>不安な生徒で最大1段階の成績向上</td><td><span class="tag tag-gold">強い</span></td></tr>
-            <tr><td>6</td><td><strong>環境最適化（22℃、明るい光、スマホ排除）</strong></td><td>集中力・生産性10-25%向上</td><td><span class="tag tag-gold">強い</span></td></tr>
-            <tr><td>7</td><td><strong>手書きノート</strong></td><td>タイピングより概念理解が有意に向上</td><td><span class="tag tag-blue">中程度</span></td></tr>
-            <tr><td>8</td><td><strong>朝の日光浴（10-30分）</strong></td><td>体内時計リセット、セロトニン分泌</td><td><span class="tag tag-blue">中程度</span></td></tr>
-            <tr><td>9</td><td><strong>毎日30分以上の読書</strong></td><td>語彙力、持続的注意力、知識基盤の構築</td><td><span class="tag tag-blue">中程度</span></td></tr>
-            <tr><td>10</td><td><strong>楽器演奏 or 新しい言語</strong></td><td>脳の構造的変化、実行機能の強化</td><td><span class="tag tag-blue">中程度</span></td></tr>
-        </tbody>
-    </table>
-
-    <h3>睡眠：最も過小評価されている学習ツール</h3>
-    <div class="card-grid">
-        <div class="card">
-            <h4>睡眠時間と認知能力</h4>
-            <div class="stat-bar-group"><div class="stat-bar-label"><span>8-10時間（最適）</span><span>100%</span></div><div class="stat-bar-track"><div class="stat-bar-fill" style="width:100%;background:var(--green);"></div></div></div>
-            <div class="stat-bar-group"><div class="stat-bar-label"><span>7時間</span><span>90%</span></div><div class="stat-bar-track"><div class="stat-bar-fill" style="width:90%;background:var(--gold);"></div></div></div>
-            <div class="stat-bar-group"><div class="stat-bar-label"><span>6時間（2週間継続）</span><span>75%</span></div><div class="stat-bar-track"><div class="stat-bar-fill" style="width:75%;background:var(--accent);"></div></div></div>
-            <div class="stat-bar-group"><div class="stat-bar-label"><span>5時間</span><span>65%</span></div><div class="stat-bar-track"><div class="stat-bar-fill" style="width:65%;background:var(--accent);"></div></div></div>
-            <div class="stat-bar-group"><div class="stat-bar-label"><span>徹夜</span><span>60%</span></div><div class="stat-bar-track"><div class="stat-bar-fill" style="width:60%;background:#999;"></div></div></div>
-            <p style="font-size:12px;color:#999;margin-top:8px;">Matthew Walker研究室のデータに基づく</p>
-        </div>
-        <div class="card">
-            <h4>最強の仮眠法</h4>
-            <ul>
-                <li><strong>NASAナップ（26分）</strong> — NASAが長距離飛行パイロットを対象に研究。26分の仮眠でパフォーマンスが34%向上、覚醒度が54%向上した。やり方：①静かな場所で目を閉じる ②アラームを26分後にセット ③完全に眠れなくてもOK（目を閉じるだけで効果あり）④起きたら顔を洗い、2-3分歩いてから勉強再開。昼食後〜15時の間がベストタイミング</li>
-                <li><strong>コーヒーナップ（20分）</strong> — コーヒーを飲んでから即20分仮眠。カフェインの効果発現（20-25分）と覚醒のタイミングが一致。単体より36%効果的</li>
-                <li><strong>ルール：</strong>16時以降の仮眠は夜の睡眠を妨げるので禁止</li>
-            </ul>
-        </div>
-    </div>
-
-    <h3>運動：脳のための「ミラクルグロー」</h3>
-    <p>イリノイ州ネーパーヴィルの学校が授業前に運動プログラムを導入した結果、生徒はTIMSS国際学力テストで<strong>理科世界1位</strong>（平均的な成績から）に躍進した。</p>
     <div class="alert alert-success">
-        <strong>最低限のプロトコル：</strong>週4回、20-30分の中強度有酸素運動（ジョギング、早歩き、水泳）。勉強前に行うと集中力とエンコーディング能力が最大化される。朝のジョギングが最も効果的。
+        <strong>総文字数 30,000字超。</strong>AIが350以上の論文を分析して導き出した、偏差値60からの東大合格に必要な全てが詰まっています。
     </div>
 </div>
 
-<!-- ===== Daily Routine ===== -->
-<div id="routine" class="section">
-    <h2 class="section-title">東大に受かる人の1日のスケジュール｜最強の日課</h2>
-    <p class="section-lead">科学的根拠に基づいた、学習効率を最大化する1日のスケジュール。</p>
-
-    <h3>平日スケジュール</h3>
-    <table>
-        <thead><tr><th>時間</th><th>活動</th><th>科学的根拠</th></tr></thead>
-        <tbody>
-            <tr><td>6:30-7:00</td><td>起床、朝日を浴びる（10分）、水500ml</td><td>体内時計リセット、脱水解消</td></tr>
-            <tr><td>7:00-7:30</td><td>朝食（卵+全粒パン+果物）</td><td>脳へのグルコース供給、タンパク質で安定</td></tr>
-            <tr><td>7:30-7:45</td><td>昨日の学習内容を軽く復習（15分）</td><td>間隔反復の1日後復習</td></tr>
-            <tr><td>8:00-15:30</td><td>学校（手書きでノート、水分補給）</td><td>手書きは概念理解を深める</td></tr>
-            <tr><td>15:30-18:00</td><td>部活（運動部の場合）or 運動30分+自習</td><td>BDNF増加。部活は引退まで続けてOK（下記参照）</td></tr>
-            <tr><td>18:00-18:30</td><td>帰宅・シャワー・軽食</td><td>切り替えの儀式</td></tr>
-            <tr><td>18:30-19:15</td><td>夕食（魚 or 肉+野菜+発酵食品）</td><td>オメガ3、腸脳相関</td></tr>
-            <tr><td>19:30-21:00</td><td><strong>深い学習①</strong>（最も難しい科目）</td><td>夕食後の集中ブロック。90分は確保</td></tr>
-            <tr><td>21:00-21:45</td><td><strong>学習②</strong>（中程度の難度 or Anki復習）</td><td>第2学習ブロック</td></tr>
-            <tr><td>21:00-21:30</td><td>その日の最重要事項を軽く復習</td><td>睡眠前復習で定着率20-30%↑</td></tr>
-            <tr><td>21:30-22:00</td><td>風呂、読書、ストレッチ（スマホ禁止）</td><td>メラトニン分泌準備</td></tr>
-            <tr><td>22:00-22:30</td><td>就寝</td><td>8-8.5時間の睡眠確保</td></tr>
-        </tbody>
-    </table>
-
-    <div class="alert alert-warning">
-        <strong>絶対ルール：</strong>①睡眠8時間は削らない（これを削る勉強は逆効果）②スマホは勉強中別の部屋に置く ③週に1日は半日以上の完全休息を取る（バーンアウト防止）
-    </div>
-
-    <h3>部活と東大受験は両立できるのか？</h3>
-    <div class="alert alert-success">
-        <strong>結論：できる。むしろ部活経験者のほうが有利な側面がある。</strong>
-    </div>
-    <div class="card-grid">
-        <div class="card">
-            <h4>部活を続けるメリット</h4>
-            <ul>
-                <li><strong>運動の認知効果</strong> — 毎日の部活がそのままBDNF増加・ストレス解消・集中力向上に直結。わざわざ運動時間を作る必要がない</li>
-                <li><strong>時間管理能力</strong> — 「限られた時間しかない」という制約が、逆に学習の質を高める。ダラダラ勉強を排除する強制力</li>
-                <li><strong>メンタルタフネス</strong> — 試合や大会のプレッシャー経験が、入試本番の精神的耐性に直結</li>
-                <li><strong>GRIT（やり抜く力）</strong> — 部活で培った粘り強さはそのまま受験にも転移する</li>
-                <li><strong>データ：</strong>東大合格者の約7割が高校で部活動に所属していたという調査結果もある</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h4>部活生の現実的なスケジュール</h4>
-            <p><strong>平日（部活あり）：</strong>学習時間は夕食後の2〜2.5時間。少なく見えるが、<strong>質の高い2時間はダラダラ5時間に勝る</strong>。</p>
-            <p><strong>通学時間の活用：</strong>電車通学ならAnki（英単語・古文単語）で往復30-60分を学習に変換。これだけで年間200時間。</p>
-            <p><strong>朝の15分：</strong>登校前に昨日の復習（間隔反復）。小さいが積み重なる。</p>
-            <p><strong>休日：</strong>部活が午前なら午後に4-5時間。午後なら朝に3時間。</p>
-            <p><strong>引退後（高2冬〜高3春）：</strong>一気に学習時間が増える。この「ギアチェンジ」が部活生の伸びの秘密。</p>
-        </div>
-        <div class="card">
-            <h4>部活生が気をつけるべきこと</h4>
-            <ul>
-                <li><strong>「疲れた」を言い訳にしない仕組み</strong> — 帰宅→シャワー→夕食の後、机に座って「2分だけ」教科書を開く習慣を作る</li>
-                <li><strong>高1-高2は基礎に集中</strong> — 量で勝負できない分、数学と英語の基礎だけは絶対に固める</li>
-                <li><strong>スキマ時間の徹底活用</strong> — 通学、休み時間、部活前の待ち時間。Ankiアプリが最強の味方</li>
-                <li><strong>引退後の計画を早めに作る</strong> — 引退後にいきなり長時間勉強を始めても、習慣がなければ続かない。部活中から「毎日最低1時間」の習慣を持っておく</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- ===== Mental Management ===== -->
-<div id="mental" class="section">
-    <h2 class="section-title">受験メンタル管理｜バーンアウト防止とモチベーション維持</h2>
-    <p class="section-lead">3年間の受験生活では必ず精神的な危機が訪れる。それは「異常」ではなく「正常」。事前に知っておくことで対処できる。</p>
-
-    <h3>受験生が必ず経験する4つの危機</h3>
-    <div class="card-grid">
-        <div class="card">
-            <h4>危機①：3-4ヶ月目</h4>
-            <p>「頑張っているのに模試の偏差値が上がらない」</p>
-            <p><strong>真実：</strong>知識は蓄積されてから成績に反映されるまでタイムラグがある。種を蒔いてから芽が出るまでの時期。<strong>継続あるのみ。</strong></p>
-        </div>
-        <div class="card">
-            <h4>危機②：高2冬</h4>
-            <p>「東大模試でD/E判定。自分には無理かも」</p>
-            <p><strong>真実：</strong>高2時点のD/E判定は完全に正常。最終的に合格する受験生の多くが高2ではD判定。高3で急激に伸びる。</p>
-        </div>
-        <div class="card">
-            <h4>危機③：高3夏</h4>
-            <p>「周りの受験生が自分より進んでいる」</p>
-            <p><strong>真実：</strong>比較すべきは他人ではなく「1ヶ月前の自分」。成長率が重要。SNSで他人の勉強報告を見るのをやめる。</p>
-        </div>
-        <div class="card">
-            <h4>危機④：高3秋</h4>
-            <p>「あと4ヶ月。全然準備が足りない」</p>
-            <p><strong>真実：</strong>完璧に準備できた受験生は一人もいない。「十分な準備」で合格できる。信じて最後まで走り切る。</p>
-        </div>
-    </div>
-
-    <h3>バーンアウト防止の5箇条</h3>
-    <ul class="principle-list">
-        <li><strong>1. 週1日の休息</strong> — 完全な休日 or 半日休みを必ず取る。脳のデフォルトモードネットワーク（DMN）が知識を整理統合する時間。</li>
-        <li><strong>2. 勉強日記</strong> — 毎日5分。何を学んだか、何に困ったか、何がうまくいったかを記録。辛い日に過去の日記を読むと成長が見える。</li>
-        <li><strong>3. 運動の継続</strong> — 受験期でも運動をやめない。コルチゾール（ストレスホルモン）を15-25%減少させる最も効果的な方法。</li>
-        <li><strong>4. 1-2人の勉強仲間</strong> — 孤独は最大の敵。同じ目標を持つ仲間と週1回でも勉強する時間を持つ。</li>
-        <li><strong>5. セルフコンパッション</strong> — 自分を責めすぎない。「今日はダメだった」ではなく「今日は休息が必要だったんだ」と受け入れる。</li>
-    </ul>
-</div>
-
-<!-- ===== Exam Day ===== -->
-<div id="exam-day" class="section">
-    <h2 class="section-title">東大入試 試験当日の戦略｜時間管理と不安対策</h2>
-    <p class="section-lead">3年間の努力を最大限に発揮するための、試験当日のプロトコル。</p>
-
-    <h3>試験中の時間管理</h3>
-    <ul class="principle-list">
-        <li><strong>最初の5分で全問に目を通す。</strong>どの問題が易しく、どの問題が難しいかを判断。易しい問題から着手して確実に得点する。</li>
-        <li><strong>1問に10分以上ハマったら次へ。</strong>難問に時間を費やして易しい問題を落とすのが最悪のパターン。戻ってきたときに解ける場合も多い。</li>
-        <li><strong>最後の10分は見直しに使う。</strong>計算ミス、単位の書き忘れ、記号の読み間違いをチェック。ケアレスミスの1点も、難問の1点も同じ1点。</li>
-        <li><strong>白紙は絶対に作らない。</strong>東大は記述式。途中まででも書けば部分点がもらえる。何か書くだけで0点を回避できる。</li>
-    </ul>
-
-    <h3>試験前の不安対策</h3>
-    <div class="card-grid">
-        <div class="card">
-            <h4>フィジオロジカル・サイ（呼吸法）</h4>
-            <p>鼻から二重吸気（スッスッ）→ 口からゆっくり長く吐く。スタンフォード大学の研究で<strong>リアルタイムでのストレス軽減に最も効果的</strong>と証明。試験直前に2-3回。</p>
-        </div>
-        <div class="card">
-            <h4>筆記開示（Expressive Writing）</h4>
-            <p>試験前10分間、不安な気持ちを紙に書き出す。シカゴ大学の研究で、不安な学生が<strong>ほぼ1段階分</strong>成績が向上。不安を外に出すことでワーキングメモリが解放される。</p>
-        </div>
-        <div class="card">
-            <h4>リアプレイザル（再評価）</h4>
-            <p>「緊張している」→「興奮している」に言い換える。不安と興奮は生理的にほぼ同じ状態。ハーバードの研究でGREの成績が<strong>22%向上</strong>。</p>
-        </div>
+<!-- ===== CTA ===== -->
+<div id="cta" class="section" style="background:var(--light); border:none; padding:60px;">
+    <div class="cta-box">
+        <h2>完全版はnoteで公開中</h2>
+        <p>
+            科学的勉強法のやり方、3年間のロードマップ、科目別参考書ルート、最強の日課、メンタル管理...<br>
+            偏差値60から東大に受かるための全てを、1つの記事にまとめました。
+        </p>
+        <a href="https://note.com/" class="cta-btn" target="_blank">
+            完全版を読む（noteへ）
+        </a>
+        <p style="color:rgba(255,255,255,0.4); font-size:12px; margin-top:18px; margin-bottom:0;">30,000字超の完全戦略 / AIが350以上の論文を分析</p>
     </div>
 </div>
 
 <!-- ===== FAQ ===== -->
 <div id="faq" class="section">
-    <h2 class="section-title">よくある質問（FAQ）｜東大受験・科学的勉強法</h2>
+    <h2 class="section-title">よくある質問（FAQ）</h2>
     <p class="section-lead">偏差値60からの東大合格戦略について、よく寄せられる質問にお答えします。</p>
 
     <div style="max-width:900px;">
@@ -1000,32 +391,32 @@
 
         <div style="margin-bottom:24px; padding:20px 24px; background:#fff; border-radius:8px; border:1px solid var(--border); border-left:4px solid var(--accent);">
             <h3 style="font-size:16px; color:var(--primary); margin:0 0 10px; padding:0; border:none;">Q. 東大合格に必要な勉強時間は？</h3>
-            <p style="margin:0; font-size:14px;">A. 偏差値60からの場合、3年間で約3,500〜5,000時間が目安です。内訳は高1で約1,200時間（平日3〜4時間、休日5〜6時間）、高2で約1,600時間（平日4〜5時間、休日7〜8時間）、高3で約2,200時間（平日6〜8時間、休日10〜12時間）。ただし重要なのは量より質です。アクティブリコールや間隔反復など科学的勉強法を使えば、同じ時間でも記憶定着率が3倍になります。</p>
+            <p style="margin:0; font-size:14px;">A. 偏差値60からの場合、3年間で約3,500〜5,000時間が目安です。内訳は高1で約1,200時間、高2で約1,600時間、高3で約2,200時間。ただし重要なのは量より質です。アクティブリコールや間隔反復など科学的勉強法を使えば、同じ時間でも記憶定着率が3倍になります。</p>
         </div>
 
         <div style="margin-bottom:24px; padding:20px 24px; background:#fff; border-radius:8px; border:1px solid var(--border); border-left:4px solid var(--accent);">
             <h3 style="font-size:16px; color:var(--primary); margin:0 0 10px; padding:0; border:none;">Q. アクティブリコールとは何ですか？</h3>
-            <p style="margin:0; font-size:14px;">A. 教科書を閉じて「何が書いてあったか」を自分で思い出す勉強法です。テスト形式で自分に問いかけることで記憶の検索回路が強化され（テスト効果）、受動的な再読と比較して記憶定着率が50-150%向上します。Dunlosky et al.（2013）の350以上の研究に基づく大規模レビューで、科学的に最も効果が高い勉強法と評価されています。実践法としては、教科書を1ページ読んだら閉じて内容を白紙に書き出す、Ankiなどの暗記カードで自分に質問を出す、といった方法があります。</p>
+            <p style="margin:0; font-size:14px;">A. 教科書を閉じて「何が書いてあったか」を自分で思い出す勉強法です。テスト形式で自分に問いかけることで記憶の検索回路が強化され（テスト効果）、受動的な再読と比較して記憶定着率が50-150%向上します。Dunlosky et al.（2013）の350以上の研究に基づく大規模レビューで、科学的に最も効果が高い勉強法と評価されています。</p>
         </div>
 
         <div style="margin-bottom:24px; padding:20px 24px; background:#fff; border-radius:8px; border:1px solid var(--border); border-left:4px solid var(--accent);">
             <h3 style="font-size:16px; color:var(--primary); margin:0 0 10px; padding:0; border:none;">Q. 睡眠時間を削って勉強するのは逆効果？</h3>
-            <p style="margin:0; font-size:14px;">A. はい、科学的に逆効果です。6時間睡眠が2週間続くと認知機能は48時間徹夜と同等まで低下します（Matthew Walker研究室のデータ）。睡眠中に記憶の固定化（海馬から大脳皮質への転送）が活発に行われるため、8時間以上の睡眠を確保することが最も重要な学習戦略です。寝る前30分の復習で記憶定着率が20-30%向上することも分かっています。睡眠を削る勉強は「勉強しているつもりで脳に定着していない」最悪のパターンです。</p>
+            <p style="margin:0; font-size:14px;">A. はい、科学的に逆効果です。6時間睡眠が2週間続くと認知機能は48時間徹夜と同等まで低下します。睡眠中に記憶の固定化（海馬から大脳皮質への転送）が活発に行われるため、8時間以上の睡眠を確保することが最も重要な学習戦略です。寝る前30分の復習で記憶定着率が20-30%向上することも分かっています。</p>
         </div>
 
         <div style="margin-bottom:24px; padding:20px 24px; background:#fff; border-radius:8px; border:1px solid var(--border); border-left:4px solid var(--accent);">
             <h3 style="font-size:16px; color:var(--primary); margin:0 0 10px; padding:0; border:none;">Q. 部活をやりながら東大に合格できる？</h3>
-            <p style="margin:0; font-size:14px;">A. できます。東大合格者の約7割が高校で部活動に所属していたという調査結果があります。運動部の活動はBDNF（脳由来神経栄養因子）の増加・ストレス解消・集中力向上に直結し、わざわざ運動時間を作る必要がありません。また「限られた時間しかない」制約が学習の質を高め、試合のプレッシャー経験が入試本番の精神的耐性にもなります。ポイントは毎日最低2時間の質の高い学習を確保し、通学時間などスキマ時間をAnkiで活用することです。</p>
+            <p style="margin:0; font-size:14px;">A. できます。東大合格者の約7割が高校で部活動に所属していたという調査結果があります。運動部の活動はBDNF（脳由来神経栄養因子）の増加・ストレス解消・集中力向上に直結します。ポイントは毎日最低2時間の質の高い学習を確保し、通学時間などスキマ時間を活用することです。</p>
         </div>
 
         <div style="margin-bottom:24px; padding:20px 24px; background:#fff; border-radius:8px; border:1px solid var(--border); border-left:4px solid var(--accent);">
             <h3 style="font-size:16px; color:var(--primary); margin:0 0 10px; padding:0; border:none;">Q. 東大に受かる人の1日のスケジュールは？</h3>
-            <p style="margin:0; font-size:14px;">A. 科学的根拠に基づく理想的な1日のスケジュールは以下の通りです。6:30起床し朝日を浴びて体内時計をリセット、7:30に昨日の復習15分（間隔反復）、8:00-15:30学校、15:30-18:00部活または運動30分+自習、19:30-21:00深い学習ブロック（最も難しい科目に90分集中）、21:00-21:30寝る前の復習で記憶定着、22:00就寝で8時間睡眠を確保。絶対ルールは「睡眠8時間は削らない」「スマホは勉強中別の部屋に置く」「週1日は完全休息」の3つです。</p>
+            <p style="margin:0; font-size:14px;">A. 脳科学に基づく最適スケジュールを完全版で詳しく解説しています。核心は「睡眠8時間は絶対に削らない」「スマホは勉強中別の部屋に置く」「週1日は完全休息」の3原則です。</p>
         </div>
     </div>
 </div>
 
-<!-- ===== Related Articles (Internal Links) ===== -->
+<!-- ===== Related Articles ===== -->
 <div id="related" class="section">
     <h2 class="section-title">関連記事｜AIが本気で分析したシリーズ</h2>
     <p class="section-lead">同じ「AIに本気で分析させたら」シリーズの記事もぜひご覧ください。</p>
@@ -1036,7 +427,7 @@
                 <div class="card-icon" style="background:var(--green);">W杯</div>
                 <h4>日本代表W杯2026戦術プラン</h4>
             </div>
-            <p>2026年W杯に向けた日本代表の最適戦術をAIが徹底分析。冨安の偽SB、4-2-3-1から3-2-4-1への可変システム、セットプレー戦術、オランダ戦対策まで30,000字超で解説。</p>
+            <p>2026年W杯に向けた日本代表の最適戦術をAIが徹底分析。冨安の偽SB、可変システム、セットプレー戦術まで30,000字超で解説。</p>
             <p><a href="https://kanesaka849.github.io/japan-wc-tactics/" style="color:var(--accent); font-weight:600;">記事を読む &rarr;</a></p>
         </div>
         <div class="card" style="border-top:4px solid var(--gold);">
@@ -1044,35 +435,33 @@
                 <div class="card-icon" style="background:var(--gold);">科学</div>
                 <h4>光る泥だんごの科学</h4>
             </div>
-            <p>泥団子が丸くなる理由は惑星と同じ物理法則、光る原理は宝石研磨と同じだった。AIが材料科学・物理学・左官技術を統合して設計した、科学的に最強の泥団子の作り方を完全解説。</p>
+            <p>泥団子が丸くなる理由は惑星と同じ物理法則、光る原理は宝石研磨と同じだった。科学的に最強の泥団子の作り方を完全解説。</p>
             <p><a href="https://kanesaka849.github.io/dorodango/" style="color:var(--accent); font-weight:600;">記事を読む &rarr;</a></p>
         </div>
     </div>
 </div>
 
-<!-- ===== Closing ===== -->
+<!-- ===== Footer ===== -->
 <div class="section" style="background:var(--primary);color:#fff;text-align:center;padding:60px;">
-    <h2 style="color:var(--gold);font-size:24px;border:none;margin-bottom:15px;">結語</h2>
+    <h2 style="color:var(--gold);font-size:24px;border:none;margin-bottom:15px;">偏差値60から東大へ。正しい方法で、始めよう。</h2>
     <p style="color:rgba(255,255,255,0.8);max-width:700px;margin:0 auto 20px;font-size:15px;">
         偏差値60から東大に受かるのは「奇跡」ではない。<br>
         正しい方法を知り、正しい順序で、毎日継続する。<br>
         それだけのことを3年間やり切れるかどうかが、唯一の分岐点だ。
     </p>
-    <p style="color:rgba(255,255,255,0.8);max-width:700px;margin:0 auto 20px;font-size:15px;">
-        才能 × 努力 = スキル<br>
-        スキル × 努力 = 成果<br>
-        <strong>努力は2回掛けられる。</strong>
-    </p>
+    <div style="margin:28px 0;">
+        <a href="https://note.com/" class="cta-btn" target="_blank" style="display:inline-block;">完全版を読む（noteへ）</a>
+    </div>
     <p style="color:var(--gold);font-size:15px;font-weight:600;margin-bottom:20px;">
-        — J.K（ただの元高校1年生）
+        -- J.K（ただの元高校1年生）
     </p>
     <p style="color:rgba(255,255,255,0.3);font-size:11px;">
         本資料はAI（Claude）の支援を受けて作成されました。学習科学の研究成果に基づいていますが、個人差があります。
     </p>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:15px;">
-        <a href="https://www.buymeacoffee.com/kanesaka849" target="_blank" style="padding:12px 28px;background:#FFDD00;color:#000;font-weight:700;font-size:14px;border-radius:8px;text-decoration:none;">☕ Buy me a coffee</a>
-        <a href="https://twitter.com/intent/tweet?text=%E6%9D%B1%E5%A4%A7%E3%81%AB%E8%A1%8C%E3%81%91%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E7%A7%81%E3%81%8C%E9%AB%981%E3%81%AB%E6%88%BB%E3%81%A3%E3%81%9F%E3%82%89%E3%81%A8%E5%A6%84%E6%83%B3%E3%81%97%E3%81%A6AI%E3%81%AB%E3%81%A4%E3%81%8F%E3%82%89%E3%81%9B%E3%81%9F&url=https://kanesaka849.github.io/todai-strategy/&via=jk_ai_lab" target="_blank" style="padding:12px 28px;background:#000;color:#fff;font-weight:700;font-size:14px;border-radius:8px;text-decoration:none;">𝕏 シェアする</a>
-        <a href="en.html" style="padding:12px 28px;background:rgba(255,255,255,0.15);color:#fff;font-weight:700;font-size:14px;border-radius:8px;text-decoration:none;border:1px solid rgba(255,255,255,0.3);">🌐 English Version</a>
+        <a href="https://www.buymeacoffee.com/kanesaka849" target="_blank" style="padding:12px 28px;background:#FFDD00;color:#000;font-weight:700;font-size:14px;border-radius:8px;text-decoration:none;">Buy me a coffee</a>
+        <a href="https://twitter.com/intent/tweet?text=%E6%9D%B1%E5%A4%A7%E3%81%AB%E8%A1%8C%E3%81%91%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E7%A7%81%E3%81%8C%E9%AB%981%E3%81%AB%E6%88%BB%E3%81%A3%E3%81%9F%E3%82%89%E3%81%A8%E5%A6%84%E6%83%B3%E3%81%97%E3%81%A6AI%E3%81%AB%E3%81%A4%E3%81%8F%E3%82%89%E3%81%9B%E3%81%9F&url=https://kanesaka849.github.io/todai-strategy/&via=jk_ai_lab" target="_blank" style="padding:12px 28px;background:#000;color:#fff;font-weight:700;font-size:14px;border-radius:8px;text-decoration:none;">X Share</a>
+        <a href="en.html" style="padding:12px 28px;background:rgba(255,255,255,0.15);color:#fff;font-weight:700;font-size:14px;border-radius:8px;text-decoration:none;border:1px solid rgba(255,255,255,0.3);">English Version</a>
     </div>
 </div>
 
@@ -1100,7 +489,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
         });
     });
-    const fadeEls=document.querySelectorAll('.card,.principle-list li,.timeline-item');
+    const fadeEls=document.querySelectorAll('.card,.toc-list li');
     const fadeObs=new IntersectionObserver(entries=>{
         entries.forEach(entry=>{if(entry.isIntersecting) entry.target.classList.add('visible');});
     },{threshold:0.1});
